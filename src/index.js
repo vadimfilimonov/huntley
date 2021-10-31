@@ -1,1 +1,1 @@
-export { default as noop } from './noop.js';
+export { default as noop } from './noop';
