@@ -1,7 +1,10 @@
+// @ts-check
+
 /**
  * This function do nothing.
  * @example
- * noop(); // undefined
+ * noop();
+ * // undefined
  */
 const noop = () => {};
 
