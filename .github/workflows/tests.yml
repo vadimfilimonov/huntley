@@ -27,4 +27,4 @@ jobs:
           CI: true
       - name: Run tests
         run: |
-          make tests
+          make test
