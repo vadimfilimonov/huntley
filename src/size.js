@@ -17,7 +17,7 @@ const size = (collection) => {
     return collection.length;
   }
 
-  if (typeof collection === 'object') {
+  if (typeof collection === 'object' && collection !== null) {
     const keys = Object.keys(collection);
     return keys.length;
   }
