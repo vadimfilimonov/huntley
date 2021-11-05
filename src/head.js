@@ -5,9 +5,9 @@
  * @example
  * head([1, 2, 3]);
  * // 1
- * @param {Array} collection
+ * @param {Array} array
  * @returns {any}
  */
-const head = (collection) => (collection.length > 0 ? collection[0] : undefined);
+const head = (array) => (array.length > 0 ? array[0] : undefined);
 
 export default head;

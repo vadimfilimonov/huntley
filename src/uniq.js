@@ -5,9 +5,9 @@
  * @example
  * uniq([2, 1, 2]);
  * // [2, 1]
- * @param {Array} collection
+ * @param {Array} array
  * @returns {Array}
  */
-const uniq = (collection) => [...new Set(collection)];
+const uniq = (array) => [...new Set(array)];
 
 export default uniq;

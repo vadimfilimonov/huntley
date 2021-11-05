@@ -5,9 +5,9 @@
  * @example
  * last([1, 2, 3]);
  * // 3
- * @param {Array} collection
+ * @param {Array} array
  * @returns {any}
  */
-const last = (collection) => (collection.length > 0 ? collection[collection.length - 1] : undefined);
+const last = (array) => (array.length > 0 ? array[array.length - 1] : undefined);
 
 export default last;

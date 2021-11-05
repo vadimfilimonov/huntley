@@ -18,7 +18,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `collection` **[Array][12]** 
+*   `array` **[Array][12]** 
 
 ### Examples
 
@@ -35,7 +35,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `collection` **[Array][12]** 
+*   `array` **[Array][12]** 
 
 ### Examples
 
@@ -63,7 +63,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `collection` **[Array][12]** 
+*   `array` **[Array][12]** 
 
 ### Examples
 
