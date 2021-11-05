@@ -8,9 +8,12 @@
     *   [Examples][6]
 *   [noop][7]
     *   [Examples][8]
-*   [uniq][9]
+*   [size][9]
     *   [Parameters][10]
     *   [Examples][11]
+*   [uniq][12]
+    *   [Parameters][13]
+    *   [Examples][14]
 
 ## head
 
@@ -18,7 +21,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][12]** 
+*   `array` **[Array][15]** 
 
 ### Examples
 
@@ -35,7 +38,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][12]** 
+*   `array` **[Array][15]** 
 
 ### Examples
 
@@ -57,13 +60,30 @@ noop();
 // undefined
 ```
 
+## size
+
+Gets the size of collection.
+
+### Parameters
+
+*   `collection` **([Array][15] | [Object][16] | [string][17])** 
+
+### Examples
+
+```javascript
+size([1, 2, 3]);
+// 3
+```
+
+Returns **[number][18]** 
+
 ## uniq
 
 Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][12]** 
+*   `array` **[Array][15]** 
 
 ### Examples
 
@@ -72,7 +92,7 @@ uniq([2, 1, 2]);
 // [2, 1]
 ```
 
-Returns **[Array][12]** 
+Returns **[Array][15]** 
 
 [1]: #head
 
@@ -90,10 +110,22 @@ Returns **[Array][12]**
 
 [8]: #examples-2
 
-[9]: #uniq
+[9]: #size
 
 [10]: #parameters-2
 
 [11]: #examples-3
 
-[12]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[12]: #uniq
+
+[13]: #parameters-3
+
+[14]: #examples-4
+
+[15]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[16]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[17]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
