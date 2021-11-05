@@ -8,6 +8,6 @@
  * @param {Array} array
  * @returns {any}
  */
-const last = (array) => (array.length > 0 ? array[array.length - 1] : undefined);
+const last = (array) => (array && array.length > 0 ? array[array.length - 1] : undefined);
 
 export default last;

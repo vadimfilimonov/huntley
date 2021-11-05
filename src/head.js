@@ -8,6 +8,6 @@
  * @param {Array} array
  * @returns {any}
  */
-const head = (array) => (array.length > 0 ? array[0] : undefined);
+const head = (array) => (array && array.length > 0 ? array[0] : undefined);
 
 export default head;
