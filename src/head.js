@@ -2,11 +2,13 @@
 
 /**
  * Gets the first element of array.
- * @example
- * head([1, 2, 3]);
- * // 1
+ *
  * @param {Array} array
- * @returns {any}
+ * @returns {*}
+ * @example
+ *
+ * head([1, 2, 3]);
+ * // => 1
  */
 const head = (array) => (array && array.length > 0 ? array[0] : undefined);
 

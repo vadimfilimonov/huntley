@@ -2,9 +2,11 @@
 
 /**
  * This function do nothing.
+ *
  * @example
+ *
  * noop();
- * // undefined
+ * // => undefined
  */
 const noop = () => {};
 

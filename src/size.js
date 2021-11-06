@@ -2,11 +2,19 @@
 
 /**
  * Gets the size of collection.
- * @example
- * size([1, 2, 3]);
- * // 3
+ *
  * @param {Array|Object|string} collection
  * @returns {number}
+ * @example
+ *
+ * size([1, 2, 3]);
+ * // => 3
+ *
+ * size({ foo: 'bar', baz: false });
+ * // => 2
+ *
+ * size('cobbles');
+ * // => 7
  */
 const size = (collection) => {
   if (typeof collection === 'string') {

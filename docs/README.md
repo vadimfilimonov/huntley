@@ -27,7 +27,7 @@ Gets the first element of array.
 
 ```javascript
 head([1, 2, 3]);
-// 1
+// => 1
 ```
 
 Returns **any** 
@@ -44,7 +44,7 @@ Gets the last element of array.
 
 ```javascript
 last([1, 2, 3]);
-// 3
+// => 3
 ```
 
 Returns **any** 
@@ -57,7 +57,7 @@ This function do nothing.
 
 ```javascript
 noop();
-// undefined
+// => undefined
 ```
 
 ## size
@@ -72,7 +72,13 @@ Gets the size of collection.
 
 ```javascript
 size([1, 2, 3]);
-// 3
+// => 3
+
+size({ foo: 'bar', baz: false });
+// => 2
+
+size('cobbles');
+// => 7
 ```
 
 Returns **[number][18]** 
@@ -89,7 +95,7 @@ Creates a duplicate-free version of an array.
 
 ```javascript
 uniq([2, 1, 2]);
-// [2, 1]
+// => [2, 1]
 ```
 
 Returns **[Array][15]** 

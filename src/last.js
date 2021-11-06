@@ -2,11 +2,13 @@
 
 /**
  * Gets the last element of array.
- * @example
- * last([1, 2, 3]);
- * // 3
+ *
  * @param {Array} array
- * @returns {any}
+ * @returns {*}
+ * @example
+ *
+ * last([1, 2, 3]);
+ * // => 3
  */
 const last = (array) => (array && array.length > 0 ? array[array.length - 1] : undefined);
 
