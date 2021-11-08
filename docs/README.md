@@ -14,9 +14,12 @@
 *   [size][12]
     *   [Parameters][13]
     *   [Examples][14]
-*   [uniq][15]
+*   [sum][15]
     *   [Parameters][16]
     *   [Examples][17]
+*   [uniq][18]
+    *   [Parameters][19]
+    *   [Examples][20]
 
 ## add
 
@@ -24,8 +27,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][18]** 
-*   `addend` **[number][18]** 
+*   `augend` **[number][21]** 
+*   `addend` **[number][21]** 
 
 ### Examples
 
@@ -34,7 +37,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][18]** The total
+Returns **[number][21]** The total
 
 ## head
 
@@ -42,7 +45,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][19]** 
+*   `array` **[Array][22]** 
 
 ### Examples
 
@@ -59,7 +62,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][19]** 
+*   `array` **[Array][22]** 
 
 ### Examples
 
@@ -87,7 +90,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][19] | [Object][20] | [string][21])** 
+*   `collection` **([Array][22] | [Object][23] | [string][24])** 
 
 ### Examples
 
@@ -102,7 +105,24 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][18]** 
+Returns **[number][21]** 
+
+## sum
+
+Computes the sum of the values in array.
+
+### Parameters
+
+*   `array` **[Array][22]** 
+
+### Examples
+
+```javascript
+sum([4, 2, 8, 6]);
+// => 20
+```
+
+Returns **[number][21]** The sum
 
 ## uniq
 
@@ -110,7 +130,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][19]** 
+*   `array` **[Array][22]** 
 
 ### Examples
 
@@ -119,7 +139,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][19]** 
+Returns **[Array][22]** 
 
 [1]: #add
 
@@ -149,16 +169,22 @@ Returns **[Array][19]**
 
 [14]: #examples-4
 
-[15]: #uniq
+[15]: #sum
 
 [16]: #parameters-4
 
 [17]: #examples-5
 
-[18]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[18]: #uniq
 
-[19]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[19]: #parameters-5
 
-[20]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[20]: #examples-6
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
