@@ -14,12 +14,15 @@
 *   [size][12]
     *   [Parameters][13]
     *   [Examples][14]
-*   [sum][15]
+*   [subtract][15]
     *   [Parameters][16]
     *   [Examples][17]
-*   [uniq][18]
+*   [sum][18]
     *   [Parameters][19]
     *   [Examples][20]
+*   [uniq][21]
+    *   [Parameters][22]
+    *   [Examples][23]
 
 ## add
 
@@ -27,8 +30,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][21]** 
-*   `addend` **[number][21]** 
+*   `augend` **[number][24]** 
+*   `addend` **[number][24]** 
 
 ### Examples
 
@@ -37,7 +40,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][21]** The total
+Returns **[number][24]** The total
 
 ## head
 
@@ -45,7 +48,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][22]** 
+*   `array` **[Array][25]** 
 
 ### Examples
 
@@ -62,7 +65,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][22]** 
+*   `array` **[Array][25]** 
 
 ### Examples
 
@@ -90,7 +93,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][22] | [Object][23] | [string][24])** 
+*   `collection` **([Array][25] | [Object][26] | [string][27])** 
 
 ### Examples
 
@@ -105,7 +108,25 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][21]** 
+Returns **[number][24]** 
+
+## subtract
+
+Subtract two numbers.
+
+### Parameters
+
+*   `minuend` **[number][24]** 
+*   `subtrahend` **[number][24]** 
+
+### Examples
+
+```javascript
+subtract(6, 4);
+// => 2
+```
+
+Returns **[number][24]** The difference
 
 ## sum
 
@@ -113,7 +134,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][22]** 
+*   `array` **[Array][25]** 
 
 ### Examples
 
@@ -122,7 +143,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][21]** The sum
+Returns **[number][24]** The sum
 
 ## uniq
 
@@ -130,7 +151,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][22]** 
+*   `array` **[Array][25]** 
 
 ### Examples
 
@@ -139,7 +160,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][22]** 
+Returns **[Array][25]** 
 
 [1]: #add
 
@@ -169,22 +190,28 @@ Returns **[Array][22]**
 
 [14]: #examples-4
 
-[15]: #sum
+[15]: #subtract
 
 [16]: #parameters-4
 
 [17]: #examples-5
 
-[18]: #uniq
+[18]: #sum
 
 [19]: #parameters-5
 
 [20]: #examples-6
 
-[21]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[21]: #uniq
 
-[22]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[22]: #parameters-6
 
-[23]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[23]: #examples-7
 
-[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[24]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[25]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[26]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[27]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
