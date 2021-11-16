@@ -6,3 +6,4 @@ export { default as size } from './size';
 export { default as add } from './add';
 export { default as sum } from './sum';
 export { default as subtract } from './subtract';
+export { default as identity } from './identity';
