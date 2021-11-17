@@ -1,7 +1,7 @@
 // @ts-check
 
 /**
- * This method returns the first argument it receives..
+ * This method returns the first argument it receives.
  *
  * @param {*} value
  * @returns {*}
