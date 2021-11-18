@@ -15,20 +15,23 @@
 *   [last][13]
     *   [Parameters][14]
     *   [Examples][15]
-*   [noop][16]
-    *   [Examples][17]
-*   [size][18]
-    *   [Parameters][19]
+*   [lt][16]
+    *   [Parameters][17]
+    *   [Examples][18]
+*   [noop][19]
     *   [Examples][20]
-*   [subtract][21]
+*   [size][21]
     *   [Parameters][22]
     *   [Examples][23]
-*   [sum][24]
+*   [subtract][24]
     *   [Parameters][25]
     *   [Examples][26]
-*   [uniq][27]
+*   [sum][27]
     *   [Parameters][28]
     *   [Examples][29]
+*   [uniq][30]
+    *   [Parameters][31]
+    *   [Examples][32]
 
 ## add
 
@@ -36,8 +39,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][30]** 
-*   `addend` **[number][30]** 
+*   `augend` **[number][33]** 
+*   `addend` **[number][33]** 
 
 ### Examples
 
@@ -46,7 +49,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][30]** The total
+Returns **[number][33]** The total
 
 ## head
 
@@ -54,7 +57,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][31]** 
+*   `array` **[Array][34]** 
 
 ### Examples
 
@@ -104,7 +107,7 @@ isNull(null);
 // => true
 ```
 
-Returns **[boolean][32]** Returns true if value is null, else false.
+Returns **[boolean][35]** Returns true if value is null, else false.
 
 ## last
 
@@ -112,7 +115,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][31]** 
+*   `array` **[Array][34]** 
 
 ### Examples
 
@@ -122,6 +125,30 @@ last([1, 2, 3]);
 ```
 
 Returns **any** 
+
+## lt
+
+Checks if `value` is less than `other`.
+
+### Parameters
+
+*   `value` **any** The value to compare.
+*   `other` **any** The other value to compare.
+
+### Examples
+
+```javascript
+lt(1, 3);
+// => true
+
+lt(3, 3);
+// => false
+
+* lt(3, 1);
+// => false
+```
+
+Returns **[boolean][35]** Returns true if value is less than other, else false.
 
 ## noop
 
@@ -140,7 +167,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][31] | [Object][33] | [string][34])** 
+*   `collection` **([Array][34] | [Object][36] | [string][37])** 
 
 ### Examples
 
@@ -155,7 +182,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][30]** 
+Returns **[number][33]** 
 
 ## subtract
 
@@ -163,8 +190,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][30]** 
-*   `subtrahend` **[number][30]** 
+*   `minuend` **[number][33]** 
+*   `subtrahend` **[number][33]** 
 
 ### Examples
 
@@ -173,7 +200,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][30]** The difference
+Returns **[number][33]** The difference
 
 ## sum
 
@@ -181,7 +208,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][31]** 
+*   `array` **[Array][34]** 
 
 ### Examples
 
@@ -190,7 +217,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][30]** The sum
+Returns **[number][33]** The sum
 
 ## uniq
 
@@ -198,7 +225,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][31]** 
+*   `array` **[Array][34]** 
 
 ### Examples
 
@@ -207,7 +234,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][31]** 
+Returns **[Array][34]** 
 
 [1]: #add
 
@@ -239,40 +266,46 @@ Returns **[Array][31]**
 
 [15]: #examples-4
 
-[16]: #noop
+[16]: #lt
 
-[17]: #examples-5
+[17]: #parameters-5
 
-[18]: #size
+[18]: #examples-5
 
-[19]: #parameters-5
+[19]: #noop
 
 [20]: #examples-6
 
-[21]: #subtract
+[21]: #size
 
 [22]: #parameters-6
 
 [23]: #examples-7
 
-[24]: #sum
+[24]: #subtract
 
 [25]: #parameters-7
 
 [26]: #examples-8
 
-[27]: #uniq
+[27]: #sum
 
 [28]: #parameters-8
 
 [29]: #examples-9
 
-[30]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[30]: #uniq
 
-[31]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[31]: #parameters-9
 
-[32]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[32]: #examples-10
 
-[33]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[33]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[34]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[34]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[35]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[36]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[37]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
