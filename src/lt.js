@@ -14,7 +14,7 @@
  * lt(3, 3);
  * // => false
  *
- * * lt(3, 1);
+ * lt(3, 1);
  * // => false
  */
 const lt = (value, other) => {
