@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "npx -n --experimental-vm-modules -n --no-warnings jest --colors",
+    "test:watch": "npx -n --experimental-vm-modules -n --no-warnings jest --colors --watchAll",
     "lint": "eslint ./src",
     "documentation": "documentation"
   },

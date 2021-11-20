@@ -10,3 +10,4 @@ export { default as identity } from './identity';
 export { default as isNull } from './isNull';
 export { default as lt } from './lt';
 export { default as gt } from './gt';
+export { default as partition } from './partition';
