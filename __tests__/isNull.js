@@ -7,6 +7,5 @@ describe('isNull', () => {
     expect(isNull(undefined)).toEqual(false);
     expect(isNull(true)).toEqual(false);
     expect(isNull(false)).toEqual(false);
-    expect(isNull()).toEqual(false);
   });
 });
