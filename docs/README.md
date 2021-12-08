@@ -24,23 +24,26 @@
 *   [lt][22]
     *   [Parameters][23]
     *   [Examples][24]
-*   [noop][25]
-    *   [Examples][26]
-*   [partition][27]
-    *   [Parameters][28]
+*   [multiply][25]
+    *   [Parameters][26]
+    *   [Examples][27]
+*   [noop][28]
     *   [Examples][29]
-*   [size][30]
+*   [partition][30]
     *   [Parameters][31]
     *   [Examples][32]
-*   [subtract][33]
+*   [size][33]
     *   [Parameters][34]
     *   [Examples][35]
-*   [sum][36]
+*   [subtract][36]
     *   [Parameters][37]
     *   [Examples][38]
-*   [uniq][39]
+*   [sum][39]
     *   [Parameters][40]
     *   [Examples][41]
+*   [uniq][42]
+    *   [Parameters][43]
+    *   [Examples][44]
 
 ## add
 
@@ -48,8 +51,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][42]** 
-*   `addend` **[number][42]** 
+*   `augend` **[number][45]** 
+*   `addend` **[number][45]** 
 
 ### Examples
 
@@ -58,7 +61,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][42]** The total
+Returns **[number][45]** The total
 
 ## gt
 
@@ -82,7 +85,7 @@ gt(1, 3);
 // => false
 ```
 
-Returns **[boolean][43]** Returns true if value is greater than other, else false.
+Returns **[boolean][46]** Returns true if value is greater than other, else false.
 
 ## head
 
@@ -90,7 +93,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][44]** 
+*   `array` **[Array][47]** 
 
 ### Examples
 
@@ -143,7 +146,7 @@ isNull(undefined);
 // => false
 ```
 
-Returns **[boolean][43]** Returns `true` if `value` is `null`, else `false`.
+Returns **[boolean][46]** Returns `true` if `value` is `null`, else `false`.
 
 ## isUndefined
 
@@ -163,7 +166,7 @@ isUndefined(null);
 // => false
 ```
 
-Returns **[boolean][43]** Returns `true` if `value` is `undefined`, else `false`.
+Returns **[boolean][46]** Returns `true` if `value` is `undefined`, else `false`.
 
 ## last
 
@@ -171,7 +174,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][44]** 
+*   `array` **[Array][47]** 
 
 ### Examples
 
@@ -204,7 +207,25 @@ lt(3, 1);
 // => false
 ```
 
-Returns **[boolean][43]** Returns true if value is less than other, else false.
+Returns **[boolean][46]** Returns true if value is less than other, else false.
+
+## multiply
+
+Multiply two numbers.
+
+### Parameters
+
+*   `multiplier` **[number][45]** 
+*   `multiplicand` **[number][45]** 
+
+### Examples
+
+```javascript
+multiply(6, 4);
+// => 24
+```
+
+Returns **[number][45]** Returns the product
 
 ## noop
 
@@ -223,8 +244,8 @@ Splits a collection into two by callback.
 
 ### Parameters
 
-*   `collection` **([Array][44] | [object][45])** The collection to iterate over.
-*   `predicate` **[Function][46]** The function invoked per iteration.
+*   `collection` **([Array][47] | [object][48])** The collection to iterate over.
+*   `predicate` **[Function][49]** The function invoked per iteration.
 
 ### Examples
 
@@ -239,7 +260,7 @@ partition(users, user => user.age >= 21);
 // => objects for [['adam, carl'], ['ivan']]
 ```
 
-Returns **[Array][44]** Returns the array of grouped elements.
+Returns **[Array][47]** Returns the array of grouped elements.
 
 ## size
 
@@ -247,7 +268,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][44] | [Object][45] | [string][47])** 
+*   `collection` **([Array][47] | [Object][48] | [string][50])** 
 
 ### Examples
 
@@ -262,7 +283,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][42]** 
+Returns **[number][45]** 
 
 ## subtract
 
@@ -270,8 +291,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][42]** 
-*   `subtrahend` **[number][42]** 
+*   `minuend` **[number][45]** 
+*   `subtrahend` **[number][45]** 
 
 ### Examples
 
@@ -280,7 +301,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][42]** The difference
+Returns **[number][45]** The difference
 
 ## sum
 
@@ -288,7 +309,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][44]** 
+*   `array` **[Array][47]** 
 
 ### Examples
 
@@ -297,7 +318,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][42]** The sum
+Returns **[number][45]** The sum
 
 ## uniq
 
@@ -305,7 +326,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][44]** 
+*   `array` **[Array][47]** 
 
 ### Examples
 
@@ -314,7 +335,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][44]** 
+Returns **[Array][47]** 
 
 [1]: #add
 
@@ -364,48 +385,54 @@ Returns **[Array][44]**
 
 [24]: #examples-7
 
-[25]: #noop
+[25]: #multiply
 
-[26]: #examples-8
+[26]: #parameters-8
 
-[27]: #partition
+[27]: #examples-8
 
-[28]: #parameters-8
+[28]: #noop
 
 [29]: #examples-9
 
-[30]: #size
+[30]: #partition
 
 [31]: #parameters-9
 
 [32]: #examples-10
 
-[33]: #subtract
+[33]: #size
 
 [34]: #parameters-10
 
 [35]: #examples-11
 
-[36]: #sum
+[36]: #subtract
 
 [37]: #parameters-11
 
 [38]: #examples-12
 
-[39]: #uniq
+[39]: #sum
 
 [40]: #parameters-12
 
 [41]: #examples-13
 
-[42]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[42]: #uniq
 
-[43]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[43]: #parameters-13
 
-[44]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[44]: #examples-14
 
-[45]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[45]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[46]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[46]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[47]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[47]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[48]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[49]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[50]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
