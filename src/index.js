@@ -12,3 +12,4 @@ export { default as isUndefined } from './isUndefined';
 export { default as lt } from './lt';
 export { default as gt } from './gt';
 export { default as partition } from './partition';
+export { default as multiply } from './multiply';
