@@ -15,3 +15,4 @@ export { default as partition } from './partition';
 export { default as multiply } from './multiply';
 export { default as divide } from './divide';
 export { default as mean } from './mean';
+export { default as isObjectLike } from './isObjectLike';

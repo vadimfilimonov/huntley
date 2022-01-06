@@ -18,38 +18,41 @@
 *   [isNull][16]
     *   [Parameters][17]
     *   [Examples][18]
-*   [isUndefined][19]
+*   [isObjectLike][19]
     *   [Parameters][20]
     *   [Examples][21]
-*   [last][22]
+*   [isUndefined][22]
     *   [Parameters][23]
     *   [Examples][24]
-*   [lt][25]
+*   [last][25]
     *   [Parameters][26]
     *   [Examples][27]
-*   [mean][28]
+*   [lt][28]
     *   [Parameters][29]
     *   [Examples][30]
-*   [multiply][31]
+*   [mean][31]
     *   [Parameters][32]
     *   [Examples][33]
-*   [noop][34]
-    *   [Examples][35]
-*   [partition][36]
-    *   [Parameters][37]
+*   [multiply][34]
+    *   [Parameters][35]
+    *   [Examples][36]
+*   [noop][37]
     *   [Examples][38]
-*   [size][39]
+*   [partition][39]
     *   [Parameters][40]
     *   [Examples][41]
-*   [subtract][42]
+*   [size][42]
     *   [Parameters][43]
     *   [Examples][44]
-*   [sum][45]
+*   [subtract][45]
     *   [Parameters][46]
     *   [Examples][47]
-*   [uniq][48]
+*   [sum][48]
     *   [Parameters][49]
     *   [Examples][50]
+*   [uniq][51]
+    *   [Parameters][52]
+    *   [Examples][53]
 
 ## add
 
@@ -57,8 +60,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][51]** 
-*   `addend` **[number][51]** 
+*   `augend` **[number][54]** 
+*   `addend` **[number][54]** 
 
 ### Examples
 
@@ -67,7 +70,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][51]** The total
+Returns **[number][54]** The total
 
 ## divide
 
@@ -75,8 +78,8 @@ Divide two numbers.
 
 ### Parameters
 
-*   `dividend` **[number][51]** 
-*   `divisor` **[number][51]** 
+*   `dividend` **[number][54]** 
+*   `divisor` **[number][54]** 
 
 ### Examples
 
@@ -85,7 +88,7 @@ divide(6, 4);
 // => 1.5
 ```
 
-Returns **[number][51]** Returns the quotient
+Returns **[number][54]** Returns the quotient
 
 ## gt
 
@@ -109,7 +112,7 @@ gt(1, 3);
 // => false
 ```
 
-Returns **[boolean][52]** Returns true if value is greater than other, else false.
+Returns **[boolean][55]** Returns true if value is greater than other, else false.
 
 ## head
 
@@ -117,7 +120,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][53]** 
+*   `array` **[Array][56]** 
 
 ### Examples
 
@@ -170,7 +173,33 @@ isNull(undefined);
 // => false
 ```
 
-Returns **[boolean][52]** Returns `true` if `value` is `null`, else `false`.
+Returns **[boolean][55]** Returns `true` if `value` is `null`, else `false`.
+
+## isObjectLike
+
+Checks if `value` is not `null` and has a `typeof` result of "object".
+
+### Parameters
+
+*   `value` **any** The value to check.
+
+### Examples
+
+```javascript
+isObjectLike({});
+// => true
+
+isObjectLike([1, 2, 3]);
+// => true
+
+isObjectLike(() => {});
+// => false
+
+isObjectLike(null);
+// => false
+```
+
+Returns **[boolean][55]** Returns `true` if `value` is object-like, else `false`.
 
 ## isUndefined
 
@@ -190,7 +219,7 @@ isUndefined(null);
 // => false
 ```
 
-Returns **[boolean][52]** Returns `true` if `value` is `undefined`, else `false`.
+Returns **[boolean][55]** Returns `true` if `value` is `undefined`, else `false`.
 
 ## last
 
@@ -198,7 +227,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][53]** 
+*   `array` **[Array][56]** 
 
 ### Examples
 
@@ -231,7 +260,7 @@ lt(3, 1);
 // => false
 ```
 
-Returns **[boolean][52]** Returns true if value is less than other, else false.
+Returns **[boolean][55]** Returns true if value is less than other, else false.
 
 ## mean
 
@@ -239,7 +268,7 @@ Computes the mean of the values in `array`.
 
 ### Parameters
 
-*   `array` **[Array][53]** 
+*   `array` **[Array][56]** 
 
 ### Examples
 
@@ -248,7 +277,7 @@ mean([4, 2, 8, 6]);
 // => 5
 ```
 
-Returns **[number][51]** Returns the mean.
+Returns **[number][54]** Returns the mean.
 
 ## multiply
 
@@ -256,8 +285,8 @@ Multiply two numbers.
 
 ### Parameters
 
-*   `multiplier` **[number][51]** 
-*   `multiplicand` **[number][51]** 
+*   `multiplier` **[number][54]** 
+*   `multiplicand` **[number][54]** 
 
 ### Examples
 
@@ -266,7 +295,7 @@ multiply(6, 4);
 // => 24
 ```
 
-Returns **[number][51]** Returns the product
+Returns **[number][54]** Returns the product
 
 ## noop
 
@@ -285,8 +314,8 @@ Splits a collection into two by callback.
 
 ### Parameters
 
-*   `collection` **([Array][53] | [object][54])** The collection to iterate over.
-*   `predicate` **[Function][55]** The function invoked per iteration.
+*   `collection` **([Array][56] | [object][57])** The collection to iterate over.
+*   `predicate` **[Function][58]** The function invoked per iteration.
 
 ### Examples
 
@@ -301,7 +330,7 @@ partition(users, user => user.age >= 21);
 // => objects for [['adam, carl'], ['ivan']]
 ```
 
-Returns **[Array][53]** Returns the array of grouped elements.
+Returns **[Array][56]** Returns the array of grouped elements.
 
 ## size
 
@@ -309,7 +338,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][53] | [Object][54] | [string][56])** 
+*   `collection` **([Array][56] | [Object][57] | [string][59])** 
 
 ### Examples
 
@@ -324,7 +353,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][51]** 
+Returns **[number][54]** 
 
 ## subtract
 
@@ -332,8 +361,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][51]** 
-*   `subtrahend` **[number][51]** 
+*   `minuend` **[number][54]** 
+*   `subtrahend` **[number][54]** 
 
 ### Examples
 
@@ -342,7 +371,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][51]** The difference
+Returns **[number][54]** The difference
 
 ## sum
 
@@ -350,7 +379,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][53]** 
+*   `array` **[Array][56]** 
 
 ### Examples
 
@@ -359,7 +388,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][51]** The sum
+Returns **[number][54]** The sum
 
 ## uniq
 
@@ -367,7 +396,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][53]** 
+*   `array` **[Array][56]** 
 
 ### Examples
 
@@ -376,7 +405,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][53]** 
+Returns **[Array][56]** 
 
 [1]: #add
 
@@ -414,78 +443,84 @@ Returns **[Array][53]**
 
 [18]: #examples-5
 
-[19]: #isundefined
+[19]: #isobjectlike
 
 [20]: #parameters-6
 
 [21]: #examples-6
 
-[22]: #last
+[22]: #isundefined
 
 [23]: #parameters-7
 
 [24]: #examples-7
 
-[25]: #lt
+[25]: #last
 
 [26]: #parameters-8
 
 [27]: #examples-8
 
-[28]: #mean
+[28]: #lt
 
 [29]: #parameters-9
 
 [30]: #examples-9
 
-[31]: #multiply
+[31]: #mean
 
 [32]: #parameters-10
 
 [33]: #examples-10
 
-[34]: #noop
+[34]: #multiply
 
-[35]: #examples-11
+[35]: #parameters-11
 
-[36]: #partition
+[36]: #examples-11
 
-[37]: #parameters-11
+[37]: #noop
 
 [38]: #examples-12
 
-[39]: #size
+[39]: #partition
 
 [40]: #parameters-12
 
 [41]: #examples-13
 
-[42]: #subtract
+[42]: #size
 
 [43]: #parameters-13
 
 [44]: #examples-14
 
-[45]: #sum
+[45]: #subtract
 
 [46]: #parameters-14
 
 [47]: #examples-15
 
-[48]: #uniq
+[48]: #sum
 
 [49]: #parameters-15
 
 [50]: #examples-16
 
-[51]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[51]: #uniq
 
-[52]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[52]: #parameters-16
 
-[53]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[53]: #examples-17
 
-[54]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[54]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[55]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[55]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[56]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[56]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[57]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[58]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[59]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
