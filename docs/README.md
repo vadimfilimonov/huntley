@@ -15,44 +15,47 @@
 *   [identity][13]
     *   [Parameters][14]
     *   [Examples][15]
-*   [isNull][16]
+*   [isNil][16]
     *   [Parameters][17]
     *   [Examples][18]
-*   [isObjectLike][19]
+*   [isNull][19]
     *   [Parameters][20]
     *   [Examples][21]
-*   [isUndefined][22]
+*   [isObjectLike][22]
     *   [Parameters][23]
     *   [Examples][24]
-*   [last][25]
+*   [isUndefined][25]
     *   [Parameters][26]
     *   [Examples][27]
-*   [lt][28]
+*   [last][28]
     *   [Parameters][29]
     *   [Examples][30]
-*   [mean][31]
+*   [lt][31]
     *   [Parameters][32]
     *   [Examples][33]
-*   [multiply][34]
+*   [mean][34]
     *   [Parameters][35]
     *   [Examples][36]
-*   [noop][37]
-    *   [Examples][38]
-*   [partition][39]
-    *   [Parameters][40]
+*   [multiply][37]
+    *   [Parameters][38]
+    *   [Examples][39]
+*   [noop][40]
     *   [Examples][41]
-*   [size][42]
+*   [partition][42]
     *   [Parameters][43]
     *   [Examples][44]
-*   [subtract][45]
+*   [size][45]
     *   [Parameters][46]
     *   [Examples][47]
-*   [sum][48]
+*   [subtract][48]
     *   [Parameters][49]
     *   [Examples][50]
-*   [uniq][51]
+*   [sum][51]
     *   [Parameters][52]
     *   [Examples][53]
+*   [uniq][54]
+    *   [Parameters][55]
+    *   [Examples][56]
 
 ## add
 
@@ -60,8 +63,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][54]** 
-*   `addend` **[number][54]** 
+*   `augend` **[number][57]** 
+*   `addend` **[number][57]** 
 
 ### Examples
 
@@ -70,7 +73,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][54]** The total
+Returns **[number][57]** The total
 
 ## divide
 
@@ -78,8 +81,8 @@ Divide two numbers.
 
 ### Parameters
 
-*   `dividend` **[number][54]** 
-*   `divisor` **[number][54]** 
+*   `dividend` **[number][57]** 
+*   `divisor` **[number][57]** 
 
 ### Examples
 
@@ -88,7 +91,7 @@ divide(6, 4);
 // => 1.5
 ```
 
-Returns **[number][54]** Returns the quotient
+Returns **[number][57]** Returns the quotient
 
 ## gt
 
@@ -112,7 +115,7 @@ gt(1, 3);
 // => false
 ```
 
-Returns **[boolean][55]** Returns true if value is greater than other, else false.
+Returns **[boolean][58]** Returns true if value is greater than other, else false.
 
 ## head
 
@@ -120,7 +123,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][56]** 
+*   `array` **[Array][59]** 
 
 ### Examples
 
@@ -155,6 +158,29 @@ identity(object) === object;
 
 Returns **any** 
 
+## isNil
+
+Checks if `value` is `null` or `undefined`.
+
+### Parameters
+
+*   `value` **any** The value to check.
+
+### Examples
+
+```javascript
+isNil(null);
+// => true
+
+isNil(undefined);
+// => true
+
+isNil(NaN);
+// => false
+```
+
+Returns **[boolean][58]** Returns `true` if `value` is nullish, else `false`.
+
 ## isNull
 
 Check if `value` is `null`
@@ -173,7 +199,7 @@ isNull(undefined);
 // => false
 ```
 
-Returns **[boolean][55]** Returns `true` if `value` is `null`, else `false`.
+Returns **[boolean][58]** Returns `true` if `value` is `null`, else `false`.
 
 ## isObjectLike
 
@@ -199,7 +225,7 @@ isObjectLike(null);
 // => false
 ```
 
-Returns **[boolean][55]** Returns `true` if `value` is object-like, else `false`.
+Returns **[boolean][58]** Returns `true` if `value` is object-like, else `false`.
 
 ## isUndefined
 
@@ -219,7 +245,7 @@ isUndefined(null);
 // => false
 ```
 
-Returns **[boolean][55]** Returns `true` if `value` is `undefined`, else `false`.
+Returns **[boolean][58]** Returns `true` if `value` is `undefined`, else `false`.
 
 ## last
 
@@ -227,7 +253,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][56]** 
+*   `array` **[Array][59]** 
 
 ### Examples
 
@@ -260,7 +286,7 @@ lt(3, 1);
 // => false
 ```
 
-Returns **[boolean][55]** Returns true if value is less than other, else false.
+Returns **[boolean][58]** Returns true if value is less than other, else false.
 
 ## mean
 
@@ -268,7 +294,7 @@ Computes the mean of the values in `array`.
 
 ### Parameters
 
-*   `array` **[Array][56]** 
+*   `array` **[Array][59]** 
 
 ### Examples
 
@@ -277,7 +303,7 @@ mean([4, 2, 8, 6]);
 // => 5
 ```
 
-Returns **[number][54]** Returns the mean.
+Returns **[number][57]** Returns the mean.
 
 ## multiply
 
@@ -285,8 +311,8 @@ Multiply two numbers.
 
 ### Parameters
 
-*   `multiplier` **[number][54]** 
-*   `multiplicand` **[number][54]** 
+*   `multiplier` **[number][57]** 
+*   `multiplicand` **[number][57]** 
 
 ### Examples
 
@@ -295,7 +321,7 @@ multiply(6, 4);
 // => 24
 ```
 
-Returns **[number][54]** Returns the product
+Returns **[number][57]** Returns the product
 
 ## noop
 
@@ -314,8 +340,8 @@ Splits a collection into two by callback.
 
 ### Parameters
 
-*   `collection` **([Array][56] | [object][57])** The collection to iterate over.
-*   `predicate` **[Function][58]** The function invoked per iteration.
+*   `collection` **([Array][59] | [object][60])** The collection to iterate over.
+*   `predicate` **[Function][61]** The function invoked per iteration.
 
 ### Examples
 
@@ -330,7 +356,7 @@ partition(users, user => user.age >= 21);
 // => objects for [['adam, carl'], ['ivan']]
 ```
 
-Returns **[Array][56]** Returns the array of grouped elements.
+Returns **[Array][59]** Returns the array of grouped elements.
 
 ## size
 
@@ -338,7 +364,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][56] | [Object][57] | [string][59])** 
+*   `collection` **([Array][59] | [Object][60] | [string][62])** 
 
 ### Examples
 
@@ -353,7 +379,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][54]** 
+Returns **[number][57]** 
 
 ## subtract
 
@@ -361,8 +387,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][54]** 
-*   `subtrahend` **[number][54]** 
+*   `minuend` **[number][57]** 
+*   `subtrahend` **[number][57]** 
 
 ### Examples
 
@@ -371,7 +397,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][54]** The difference
+Returns **[number][57]** The difference
 
 ## sum
 
@@ -379,7 +405,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][56]** 
+*   `array` **[Array][59]** 
 
 ### Examples
 
@@ -388,7 +414,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][54]** The sum
+Returns **[number][57]** The sum
 
 ## uniq
 
@@ -396,7 +422,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][56]** 
+*   `array` **[Array][59]** 
 
 ### Examples
 
@@ -405,7 +431,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][56]** 
+Returns **[Array][59]** 
 
 [1]: #add
 
@@ -437,90 +463,96 @@ Returns **[Array][56]**
 
 [15]: #examples-4
 
-[16]: #isnull
+[16]: #isnil
 
 [17]: #parameters-5
 
 [18]: #examples-5
 
-[19]: #isobjectlike
+[19]: #isnull
 
 [20]: #parameters-6
 
 [21]: #examples-6
 
-[22]: #isundefined
+[22]: #isobjectlike
 
 [23]: #parameters-7
 
 [24]: #examples-7
 
-[25]: #last
+[25]: #isundefined
 
 [26]: #parameters-8
 
 [27]: #examples-8
 
-[28]: #lt
+[28]: #last
 
 [29]: #parameters-9
 
 [30]: #examples-9
 
-[31]: #mean
+[31]: #lt
 
 [32]: #parameters-10
 
 [33]: #examples-10
 
-[34]: #multiply
+[34]: #mean
 
 [35]: #parameters-11
 
 [36]: #examples-11
 
-[37]: #noop
+[37]: #multiply
 
-[38]: #examples-12
+[38]: #parameters-12
 
-[39]: #partition
+[39]: #examples-12
 
-[40]: #parameters-12
+[40]: #noop
 
 [41]: #examples-13
 
-[42]: #size
+[42]: #partition
 
 [43]: #parameters-13
 
 [44]: #examples-14
 
-[45]: #subtract
+[45]: #size
 
 [46]: #parameters-14
 
 [47]: #examples-15
 
-[48]: #sum
+[48]: #subtract
 
 [49]: #parameters-15
 
 [50]: #examples-16
 
-[51]: #uniq
+[51]: #sum
 
 [52]: #parameters-16
 
 [53]: #examples-17
 
-[54]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[54]: #uniq
 
-[55]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[55]: #parameters-17
 
-[56]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[56]: #examples-18
 
-[57]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[57]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[58]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[58]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 
-[59]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[59]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[60]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[61]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[62]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
