@@ -4,9 +4,13 @@
   "description": "",
   "main": "src/index.js",
   "type": "module",
+  "engines": {
+    "node": "16",
+    "npm": "8"
+  },
   "scripts": {
-    "test": "npx -n --experimental-vm-modules -n --no-warnings jest --colors",
-    "test:watch": "npx -n --experimental-vm-modules -n --no-warnings jest --colors --watchAll",
+    "test": "npx --no-warnings jest --colors",
+    "test:watch": "npx jest --colors --watchAll",
     "lint": "eslint ./src",
     "documentation": "documentation"
   },
@@ -22,12 +26,12 @@
   "homepage": "https://github.com/VadimFilimonov/bicycle#readme",
   "devDependencies": {
     "documentation": "^13.2.5",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint": "^8.8.0",
+    "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.3.1",
-    "prettier": "^2.4.1"
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1"
   }
 }
