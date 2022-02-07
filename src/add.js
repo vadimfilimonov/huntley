@@ -1,19 +1,22 @@
 // @ts-check
 
+const DEFAULT_VALUE = 0;
+
 /**
  * Adds two numbers.
  *
- * @param {number} augend
- * @param {number} addend
- * @returns {number} - The total
+ * @category Math
+ * @param {number} augend The first number in an addition.
+ * @param {number} addend The second number in an addition.
+ * @returns {number} - Returns the total.
  * @example
  *
  * add(6, 4);
  * // => 10
  */
 const add = (augend, addend) => {
-  const normalizedAugend = augend || 0;
-  const normalizedAddend = addend || 0;
+  const normalizedAugend = augend || DEFAULT_VALUE;
+  const normalizedAddend = addend || DEFAULT_VALUE;
   return normalizedAugend + normalizedAddend;
 };
 
