@@ -21,56 +21,59 @@
 *   [identity][19]
     *   [Parameters][20]
     *   [Examples][21]
-*   [isArray][22]
+*   [initial][22]
     *   [Parameters][23]
     *   [Examples][24]
-*   [isNil][25]
+*   [isArray][25]
     *   [Parameters][26]
     *   [Examples][27]
-*   [isNull][28]
+*   [isNil][28]
     *   [Parameters][29]
     *   [Examples][30]
-*   [isObjectLike][31]
+*   [isNull][31]
     *   [Parameters][32]
     *   [Examples][33]
-*   [isUndefined][34]
+*   [isObjectLike][34]
     *   [Parameters][35]
     *   [Examples][36]
-*   [last][37]
+*   [isUndefined][37]
     *   [Parameters][38]
     *   [Examples][39]
-*   [lt][40]
+*   [last][40]
     *   [Parameters][41]
     *   [Examples][42]
-*   [max][43]
+*   [lt][43]
     *   [Parameters][44]
     *   [Examples][45]
-*   [mean][46]
+*   [max][46]
     *   [Parameters][47]
     *   [Examples][48]
-*   [min][49]
+*   [mean][49]
     *   [Parameters][50]
     *   [Examples][51]
-*   [multiply][52]
+*   [min][52]
     *   [Parameters][53]
     *   [Examples][54]
-*   [noop][55]
-    *   [Examples][56]
-*   [partition][57]
-    *   [Parameters][58]
+*   [multiply][55]
+    *   [Parameters][56]
+    *   [Examples][57]
+*   [noop][58]
     *   [Examples][59]
-*   [size][60]
+*   [partition][60]
     *   [Parameters][61]
     *   [Examples][62]
-*   [subtract][63]
+*   [size][63]
     *   [Parameters][64]
     *   [Examples][65]
-*   [sum][66]
+*   [subtract][66]
     *   [Parameters][67]
     *   [Examples][68]
-*   [uniq][69]
+*   [sum][69]
     *   [Parameters][70]
     *   [Examples][71]
+*   [uniq][72]
+    *   [Parameters][73]
+    *   [Examples][74]
 
 ## add
 
@@ -78,8 +81,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][72]** The first number in an addition.
-*   `addend` **[number][72]** The second number in an addition.
+*   `augend` **[number][75]** The first number in an addition.
+*   `addend` **[number][75]** The second number in an addition.
 
 ### Examples
 
@@ -88,7 +91,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][72]** Returns the total.
+Returns **[number][75]** Returns the total.
 
 ## divide
 
@@ -96,8 +99,8 @@ Divide two numbers.
 
 ### Parameters
 
-*   `dividend` **[number][72]** 
-*   `divisor` **[number][72]** 
+*   `dividend` **[number][75]** 
+*   `divisor` **[number][75]** 
 
 ### Examples
 
@@ -106,7 +109,7 @@ divide(6, 4);
 // => 1.5
 ```
 
-Returns **[number][72]** Returns the quotient
+Returns **[number][75]** Returns the quotient
 
 ## drop
 
@@ -114,8 +117,8 @@ Creates a slice of `array` with `n` elements dropped from the beginning.
 
 ### Parameters
 
-*   `array` **[Array][73]** The array to query.
-*   `n` **[number][72]** The number of elements to drop. (optional, default `1`)
+*   `array` **[Array][76]** The array to query.
+*   `n` **[number][75]** The number of elements to drop. (optional, default `1`)
 
 ### Examples
 
@@ -133,7 +136,7 @@ drop([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
 
-Returns **[Array][73]** Returns the slice of `array`.
+Returns **[Array][76]** Returns the slice of `array`.
 
 ## dropRight
 
@@ -141,8 +144,8 @@ Creates a slice of `array` with `n` elements dropped from the end.
 
 ### Parameters
 
-*   `array` **[Array][73]** The array to query.
-*   `n` **[number][72]** The number of elements to drop. (optional, default `1`)
+*   `array` **[Array][76]** The array to query.
+*   `n` **[number][75]** The number of elements to drop. (optional, default `1`)
 
 ### Examples
 
@@ -160,7 +163,7 @@ dropRight([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
 
-Returns **[Array][73]** Returns the slice of `array`.
+Returns **[Array][76]** Returns the slice of `array`.
 
 ## gt
 
@@ -184,7 +187,7 @@ gt(1, 3);
 // => false
 ```
 
-Returns **[boolean][74]** Returns true if value is greater than other, else false.
+Returns **[boolean][77]** Returns true if value is greater than other, else false.
 
 ## head
 
@@ -192,7 +195,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][73]** 
+*   `array` **[Array][76]** 
 
 ### Examples
 
@@ -227,6 +230,23 @@ identity(object) === object;
 
 Returns **any** 
 
+## initial
+
+Gets all but the last element of `array`.
+
+### Parameters
+
+*   `array` **[Array][76]** The array to query.
+
+### Examples
+
+```javascript
+initial([1, 2, 3]);
+// => [1, 2]
+```
+
+Returns **[Array][76]** Returns the slice of `array`.
+
 ## isArray
 
 Checks if `value` is classified as an `Array` object.
@@ -248,7 +268,7 @@ isArray('abc');
 // => false
 ```
 
-Returns **[boolean][74]** Returns `true` if `value` is an array, else `false`.
+Returns **[boolean][77]** Returns `true` if `value` is an array, else `false`.
 
 ## isNil
 
@@ -271,7 +291,7 @@ isNil(NaN);
 // => false
 ```
 
-Returns **[boolean][74]** Returns `true` if `value` is nullish, else `false`.
+Returns **[boolean][77]** Returns `true` if `value` is nullish, else `false`.
 
 ## isNull
 
@@ -291,7 +311,7 @@ isNull(undefined);
 // => false
 ```
 
-Returns **[boolean][74]** Returns `true` if `value` is `null`, else `false`.
+Returns **[boolean][77]** Returns `true` if `value` is `null`, else `false`.
 
 ## isObjectLike
 
@@ -317,7 +337,7 @@ isObjectLike(null);
 // => false
 ```
 
-Returns **[boolean][74]** Returns `true` if `value` is object-like, else `false`.
+Returns **[boolean][77]** Returns `true` if `value` is object-like, else `false`.
 
 ## isUndefined
 
@@ -337,7 +357,7 @@ isUndefined(null);
 // => false
 ```
 
-Returns **[boolean][74]** Returns `true` if `value` is `undefined`, else `false`.
+Returns **[boolean][77]** Returns `true` if `value` is `undefined`, else `false`.
 
 ## last
 
@@ -345,7 +365,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][73]** 
+*   `array` **[Array][76]** 
 
 ### Examples
 
@@ -378,7 +398,7 @@ lt(3, 1);
 // => false
 ```
 
-Returns **[boolean][74]** Returns true if value is less than other, else false.
+Returns **[boolean][77]** Returns true if value is less than other, else false.
 
 ## max
 
@@ -386,7 +406,7 @@ Computes the maximum value of `array`. If `array` is empty or falsey, `undefined
 
 ### Parameters
 
-*   `array` **[Array][73]** The array to iterate over.
+*   `array` **[Array][76]** The array to iterate over.
 
 ### Examples
 
@@ -406,7 +426,7 @@ Computes the mean of the values in `array`.
 
 ### Parameters
 
-*   `array` **[Array][73]** 
+*   `array` **[Array][76]** 
 
 ### Examples
 
@@ -415,7 +435,7 @@ mean([4, 2, 8, 6]);
 // => 5
 ```
 
-Returns **[number][72]** Returns the mean.
+Returns **[number][75]** Returns the mean.
 
 ## min
 
@@ -423,7 +443,7 @@ Computes the minimum value of `array`. If `array` is empty or falsey, `undefined
 
 ### Parameters
 
-*   `array` **[Array][73]** The array to iterate over.
+*   `array` **[Array][76]** The array to iterate over.
 
 ### Examples
 
@@ -443,8 +463,8 @@ Multiply two numbers.
 
 ### Parameters
 
-*   `multiplier` **[number][72]** 
-*   `multiplicand` **[number][72]** 
+*   `multiplier` **[number][75]** 
+*   `multiplicand` **[number][75]** 
 
 ### Examples
 
@@ -453,7 +473,7 @@ multiply(6, 4);
 // => 24
 ```
 
-Returns **[number][72]** Returns the product
+Returns **[number][75]** Returns the product
 
 ## noop
 
@@ -472,8 +492,8 @@ Splits a collection into two by callback.
 
 ### Parameters
 
-*   `collection` **([Array][73] | [object][75])** The collection to iterate over.
-*   `predicate` **[Function][76]** The function invoked per iteration.
+*   `collection` **([Array][76] | [object][78])** The collection to iterate over.
+*   `predicate` **[Function][79]** The function invoked per iteration.
 
 ### Examples
 
@@ -488,7 +508,7 @@ partition(users, user => user.age >= 21);
 // => objects for [['adam, carl'], ['ivan']]
 ```
 
-Returns **[Array][73]** Returns the array of grouped elements.
+Returns **[Array][76]** Returns the array of grouped elements.
 
 ## size
 
@@ -496,7 +516,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][73] | [Object][75] | [string][77])** 
+*   `collection` **([Array][76] | [Object][78] | [string][80])** 
 
 ### Examples
 
@@ -511,7 +531,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][72]** 
+Returns **[number][75]** 
 
 ## subtract
 
@@ -519,8 +539,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][72]** 
-*   `subtrahend` **[number][72]** 
+*   `minuend` **[number][75]** 
+*   `subtrahend` **[number][75]** 
 
 ### Examples
 
@@ -529,7 +549,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][72]** The difference
+Returns **[number][75]** The difference
 
 ## sum
 
@@ -537,7 +557,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][73]** 
+*   `array` **[Array][76]** 
 
 ### Examples
 
@@ -546,7 +566,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][72]** The sum
+Returns **[number][75]** The sum
 
 ## uniq
 
@@ -554,7 +574,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][73]** 
+*   `array` **[Array][76]** 
 
 ### Examples
 
@@ -563,7 +583,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][73]** 
+Returns **[Array][76]** 
 
 [1]: #add
 
@@ -607,114 +627,120 @@ Returns **[Array][73]**
 
 [21]: #examples-6
 
-[22]: #isarray
+[22]: #initial
 
 [23]: #parameters-7
 
 [24]: #examples-7
 
-[25]: #isnil
+[25]: #isarray
 
 [26]: #parameters-8
 
 [27]: #examples-8
 
-[28]: #isnull
+[28]: #isnil
 
 [29]: #parameters-9
 
 [30]: #examples-9
 
-[31]: #isobjectlike
+[31]: #isnull
 
 [32]: #parameters-10
 
 [33]: #examples-10
 
-[34]: #isundefined
+[34]: #isobjectlike
 
 [35]: #parameters-11
 
 [36]: #examples-11
 
-[37]: #last
+[37]: #isundefined
 
 [38]: #parameters-12
 
 [39]: #examples-12
 
-[40]: #lt
+[40]: #last
 
 [41]: #parameters-13
 
 [42]: #examples-13
 
-[43]: #max
+[43]: #lt
 
 [44]: #parameters-14
 
 [45]: #examples-14
 
-[46]: #mean
+[46]: #max
 
 [47]: #parameters-15
 
 [48]: #examples-15
 
-[49]: #min
+[49]: #mean
 
 [50]: #parameters-16
 
 [51]: #examples-16
 
-[52]: #multiply
+[52]: #min
 
 [53]: #parameters-17
 
 [54]: #examples-17
 
-[55]: #noop
+[55]: #multiply
 
-[56]: #examples-18
+[56]: #parameters-18
 
-[57]: #partition
+[57]: #examples-18
 
-[58]: #parameters-18
+[58]: #noop
 
 [59]: #examples-19
 
-[60]: #size
+[60]: #partition
 
 [61]: #parameters-19
 
 [62]: #examples-20
 
-[63]: #subtract
+[63]: #size
 
 [64]: #parameters-20
 
 [65]: #examples-21
 
-[66]: #sum
+[66]: #subtract
 
 [67]: #parameters-21
 
 [68]: #examples-22
 
-[69]: #uniq
+[69]: #sum
 
 [70]: #parameters-22
 
 [71]: #examples-23
 
-[72]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[72]: #uniq
 
-[73]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[73]: #parameters-23
 
-[74]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[74]: #examples-24
 
-[75]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[75]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[76]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[76]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[77]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[77]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[78]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[79]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+
+[80]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String

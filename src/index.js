@@ -22,3 +22,4 @@ export { default as max } from './max';
 export { default as min } from './min';
 export { default as drop } from './drop';
 export { default as dropRight } from './dropRight';
+export { default as initial } from './initial';
