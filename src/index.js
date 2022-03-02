@@ -1,27 +1,92 @@
-export { default as noop } from './noop';
-export { default as uniq } from './uniq';
-export { default as head, default as first } from './head';
-export { default as last } from './last';
-export { default as size } from './size';
-export { default as add } from './add';
-export { default as sum } from './sum';
-export { default as subtract } from './subtract';
-export { default as identity } from './identity';
-export { default as isNull } from './isNull';
-export { default as isUndefined } from './isUndefined';
-export { default as lt } from './lt';
-export { default as gt } from './gt';
-export { default as partition } from './partition';
-export { default as multiply } from './multiply';
-export { default as divide } from './divide';
-export { default as mean } from './mean';
-export { default as isObjectLike } from './isObjectLike';
-export { default as isNil } from './isNil';
-export { default as isArray } from './isArray';
-export { default as max } from './max';
-export { default as min } from './min';
-export { default as drop } from './drop';
-export { default as dropRight } from './dropRight';
-export { default as initial } from './initial';
-export { default as stubFalse } from './stubFalse';
-export { default as stubTrue } from './stubTrue';
+// @ts-check
+/* eslint-disable import/no-duplicates */
+import add from './add';
+import divide from './divide';
+import drop from './drop';
+import dropRight from './dropRight';
+import first from './head';
+import gt from './gt';
+import head from './head';
+import identity from './identity';
+import initial from './initial';
+import isArray from './isArray';
+import isNil from './isNil';
+import isNull from './isNull';
+import isObjectLike from './isObjectLike';
+import isUndefined from './isUndefined';
+import last from './last';
+import lt from './lt';
+import max from './max';
+import mean from './mean';
+import min from './min';
+import multiply from './multiply';
+import noop from './noop';
+import partition from './partition';
+import size from './size';
+import stubFalse from './stubFalse';
+import stubTrue from './stubTrue';
+import subtract from './subtract';
+import sum from './sum';
+import uniq from './uniq';
+
+export {
+  add,
+  divide,
+  drop,
+  dropRight,
+  first,
+  gt,
+  head,
+  identity,
+  initial,
+  isArray,
+  isNil,
+  isNull,
+  isObjectLike,
+  isUndefined,
+  last,
+  lt,
+  max,
+  mean,
+  min,
+  multiply,
+  noop,
+  partition,
+  size,
+  stubFalse,
+  stubTrue,
+  subtract,
+  sum,
+  uniq,
+};
+
+export default {
+  add,
+  divide,
+  drop,
+  dropRight,
+  first,
+  gt,
+  head,
+  identity,
+  initial,
+  isArray,
+  isNil,
+  isNull,
+  isObjectLike,
+  isUndefined,
+  last,
+  lt,
+  max,
+  mean,
+  min,
+  multiply,
+  noop,
+  partition,
+  size,
+  stubFalse,
+  stubTrue,
+  subtract,
+  sum,
+  uniq,
+};
