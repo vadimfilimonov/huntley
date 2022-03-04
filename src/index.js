@@ -23,6 +23,7 @@ import multiply from './multiply';
 import noop from './noop';
 import partition from './partition';
 import size from './size';
+import stubArray from './stubArray';
 import stubFalse from './stubFalse';
 import stubTrue from './stubTrue';
 import subtract from './subtract';
@@ -53,6 +54,7 @@ export {
   noop,
   partition,
   size,
+  stubArray,
   stubFalse,
   stubTrue,
   subtract,
@@ -84,6 +86,7 @@ export default {
   noop,
   partition,
   size,
+  stubArray,
   stubFalse,
   stubTrue,
   subtract,
