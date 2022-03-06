@@ -25,6 +25,7 @@ import partition from './partition';
 import size from './size';
 import stubArray from './stubArray';
 import stubFalse from './stubFalse';
+import stubObject from './stubObject';
 import stubString from './stubString';
 import stubTrue from './stubTrue';
 import subtract from './subtract';
@@ -57,6 +58,7 @@ export {
   size,
   stubArray,
   stubFalse,
+  stubObject,
   stubString,
   stubTrue,
   subtract,
@@ -90,6 +92,7 @@ export default {
   size,
   stubArray,
   stubFalse,
+  stubObject,
   stubString,
   stubTrue,
   subtract,
