@@ -1,6 +1,7 @@
 // @ts-check
 /* eslint-disable import/no-duplicates */
 import add from './add';
+import defaultTo from './defaultTo';
 import divide from './divide';
 import drop from './drop';
 import dropRight from './dropRight';
@@ -34,6 +35,7 @@ import uniq from './uniq';
 
 export {
   add,
+  defaultTo,
   divide,
   drop,
   dropRight,
@@ -68,6 +70,7 @@ export {
 
 export default {
   add,
+  defaultTo,
   divide,
   drop,
   dropRight,
