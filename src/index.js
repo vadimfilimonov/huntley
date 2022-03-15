@@ -24,6 +24,7 @@ import min from './min';
 import multiply from './multiply';
 import noop from './noop';
 import partition from './partition';
+import reverse from './reverse';
 import size from './size';
 import stubArray from './stubArray';
 import stubFalse from './stubFalse';
@@ -59,6 +60,7 @@ export {
   multiply,
   noop,
   partition,
+  reverse,
   size,
   stubArray,
   stubFalse,
@@ -95,6 +97,7 @@ export default {
   multiply,
   noop,
   partition,
+  reverse,
   size,
   stubArray,
   stubFalse,
