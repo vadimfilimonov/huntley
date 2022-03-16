@@ -2,9 +2,11 @@ import { reverse } from '../src';
 
 describe('reverse', () => {
   test('Should work', () => {
-    const array = [1, 2, 3];
-    expect(reverse(array)).toEqual([3, 2, 1]);
-    expect(array).toEqual([3, 2, 1]);
+    const actual = [1, 2, 3];
+    const expected = [3, 2, 1];
+
+    expect(reverse(actual)).toEqual(expected);
+    expect(actual).toEqual(expected);
   });
 
   test('Wrong arguments', () => {
