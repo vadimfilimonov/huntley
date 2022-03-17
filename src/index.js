@@ -34,6 +34,7 @@ import stubTrue from './stubTrue';
 import subtract from './subtract';
 import sum from './sum';
 import uniq from './uniq';
+import upperFirst from './upperFirst';
 
 export {
   add,
@@ -70,6 +71,7 @@ export {
   subtract,
   sum,
   uniq,
+  upperFirst,
 };
 
 export default {
@@ -107,4 +109,5 @@ export default {
   subtract,
   sum,
   uniq,
+  upperFirst,
 };
