@@ -1,7 +1,7 @@
 {
-  "name": "bicycle",
-  "version": "1.0.0",
-  "description": "",
+  "name": "huntley",
+  "version": "0.0.1",
+  "description": "Utility library delivering extras.",
   "main": "src/index.js",
   "type": "module",
   "engines": {
@@ -16,22 +16,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VadimFilimonov/bicycle.git"
+    "url": "git+https://github.com/VadimFilimonov/huntley.git"
   },
   "author": "Vadim Filimonov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VadimFilimonov/bicycle/issues"
+    "url": "https://github.com/VadimFilimonov/huntley/issues"
   },
-  "homepage": "https://github.com/VadimFilimonov/bicycle#readme",
+  "homepage": "https://github.com/VadimFilimonov/huntley#readme",
   "devDependencies": {
     "documentation": "^13.2.5",
-    "eslint": "^8.8.0",
+    "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.4.7",
-    "prettier": "^2.5.1"
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2"
   }
 }

@@ -1,0 +1,10 @@
+coverage
+.npmignore
+.github
+.editorconfig
+.eslintrc.json
+.prettierrc.json
+__tests__
+Makefile
+docs
+node_modules
