@@ -1,5 +1,5 @@
 // @ts-check
-import isNull from './isNull';
+import isNull from './isNull.js';
 
 /**
  * Checks if `value` is not `null` and has a `typeof` result of "object".

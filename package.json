@@ -1,6 +1,6 @@
 {
   "name": "huntley",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility library delivering extras.",
   "main": "src/index.js",
   "type": "module",

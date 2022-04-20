@@ -1,5 +1,5 @@
 // @ts-check
-import isArray from './isArray';
+import isArray from './isArray.js';
 
 /**
  * Creates a slice of `array` with `n` elements dropped from the beginning.

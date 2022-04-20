@@ -1,5 +1,5 @@
 // @ts-check
-import isNil from './isNil';
+import isNil from './isNil.js';
 
 /**
  * Reverses `array` so that the first element becomes the last, the second element becomes the second to last, and so on.

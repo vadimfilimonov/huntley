@@ -1,6 +1,6 @@
 // @ts-check
-import sum from './sum';
-import size from './size';
+import sum from './sum.js';
+import size from './size.js';
 
 /**
  * Computes the mean of the values in `array`.

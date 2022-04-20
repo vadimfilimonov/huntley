@@ -1,6 +1,6 @@
 // @ts-check
-import isArray from './isArray';
-import size from './size';
+import isArray from './isArray.js';
+import size from './size.js';
 
 /**
  * Creates a slice of `array` with `n` elements dropped from the end.

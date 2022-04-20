@@ -1,6 +1,6 @@
 // @ts-check
-import isNull from './isNull';
-import isUndefined from './isUndefined';
+import isNull from './isNull.js';
+import isUndefined from './isUndefined.js';
 
 /**
  * Checks if `value` is `null` or `undefined`.
