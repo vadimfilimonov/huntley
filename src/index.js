@@ -33,6 +33,7 @@ import stubString from './stubString.js';
 import stubTrue from './stubTrue.js';
 import subtract from './subtract.js';
 import sum from './sum.js';
+import tail from './tail.js';
 import uniq from './uniq.js';
 import upperFirst from './upperFirst.js';
 
@@ -70,6 +71,7 @@ export {
   stubTrue,
   subtract,
   sum,
+  tail,
   uniq,
   upperFirst,
 };
@@ -108,6 +110,7 @@ export default {
   stubTrue,
   subtract,
   sum,
+  tail,
   uniq,
   upperFirst,
 };
