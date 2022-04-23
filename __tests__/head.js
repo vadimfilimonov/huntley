@@ -1,4 +1,4 @@
-import { head } from '../src';
+import { head } from '../src/index.js';
 
 describe('Head', () => {
   test('should return undefined', () => {

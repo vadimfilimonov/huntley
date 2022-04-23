@@ -1,4 +1,4 @@
-import { multiply } from '../src';
+import { multiply } from '../src/index.js';
 
 describe('multiply', () => {
   test('Should work', () => {

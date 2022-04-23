@@ -1,4 +1,4 @@
-import { isUndefined } from '../src';
+import { isUndefined } from '../src/index.js';
 
 describe('isUndefined', () => {
   test('Should work', () => {

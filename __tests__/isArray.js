@@ -1,4 +1,4 @@
-import { isArray } from '../src';
+import { isArray } from '../src/index.js';
 
 describe('isArray', () => {
   test('Should work', () => {

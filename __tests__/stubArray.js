@@ -1,4 +1,4 @@
-import { stubArray } from '../src';
+import { stubArray } from '../src/index.js';
 
 describe('StubArray', () => {
   test('should return new empty array', () => {

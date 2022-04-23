@@ -1,4 +1,4 @@
-import { sum } from '../src';
+import { sum } from '../src/index.js';
 
 describe('Sum', () => {
   test('Should work', () => {

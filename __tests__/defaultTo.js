@@ -1,4 +1,4 @@
-import { defaultTo } from '../src';
+import { defaultTo } from '../src/index.js';
 
 describe('DefaultTo', () => {
   test('Should work', () => {

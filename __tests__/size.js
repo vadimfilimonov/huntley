@@ -1,4 +1,4 @@
-import { size } from '../src';
+import { size } from '../src/index.js';
 
 describe('Size', () => {
   test('Array', () => {

@@ -1,4 +1,4 @@
-import { lt } from '../src';
+import { lt } from '../src/index.js';
 
 describe('lt', () => {
   test('Should work', () => {

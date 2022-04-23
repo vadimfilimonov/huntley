@@ -1,4 +1,4 @@
-import { stubFalse } from '../src';
+import { stubFalse } from '../src/index.js';
 
 describe('StubFalse', () => {
   test('should return false', () => {

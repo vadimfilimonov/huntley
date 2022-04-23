@@ -4,6 +4,7 @@
   "description": "Utility library delivering extras.",
   "main": "src/index.js",
   "type": "module",
+  "keywords": ["util"],
   "engines": {
     "node": "16",
     "npm": "8"

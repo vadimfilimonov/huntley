@@ -1,4 +1,4 @@
-import { gt } from '../src';
+import { gt } from '../src/index.js';
 
 describe('gt', () => {
   test('Should work', () => {

@@ -1,4 +1,4 @@
-import { max } from '../src';
+import { max } from '../src/index.js';
 
 describe('Max', () => {
   test('Array', () => {

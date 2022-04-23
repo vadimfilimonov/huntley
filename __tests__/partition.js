@@ -1,4 +1,4 @@
-import { partition } from '../src';
+import { partition } from '../src/index.js';
 
 describe('Partition', () => {
   test('Split array into two groups', () => {

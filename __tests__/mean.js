@@ -1,4 +1,4 @@
-import { mean } from '../src';
+import { mean } from '../src/index.js';
 
 describe('Mean', () => {
   test('Should work', () => {

@@ -1,4 +1,4 @@
-import { drop } from '../src';
+import { drop } from '../src/index.js';
 
 describe('Drop', () => {
   test('should work', () => {

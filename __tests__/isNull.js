@@ -1,4 +1,4 @@
-import { isNull } from '../src';
+import { isNull } from '../src/index.js';
 
 describe('isNull', () => {
   test('Should work', () => {

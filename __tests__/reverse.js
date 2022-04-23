@@ -1,4 +1,4 @@
-import { reverse } from '../src';
+import { reverse } from '../src/index.js';
 
 describe('reverse', () => {
   test('Should work', () => {

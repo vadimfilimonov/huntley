@@ -1,4 +1,4 @@
-import { dropRight } from '../src';
+import { dropRight } from '../src/index.js';
 
 describe('DropRight', () => {
   test('should work', () => {

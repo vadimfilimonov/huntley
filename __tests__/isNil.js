@@ -1,4 +1,4 @@
-import { isNil } from '../src';
+import { isNil } from '../src/index.js';
 
 describe('isNil', () => {
   test('Should work', () => {

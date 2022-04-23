@@ -1,4 +1,4 @@
-import { uniq } from '../src';
+import { uniq } from '../src/index.js';
 
 describe('Uniq', () => {
   test('It works', () => {

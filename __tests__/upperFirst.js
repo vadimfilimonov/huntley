@@ -1,4 +1,4 @@
-import { upperFirst } from '../src';
+import { upperFirst } from '../src/index.js';
 
 describe('UpperFirst', () => {
   test('Should work', () => {

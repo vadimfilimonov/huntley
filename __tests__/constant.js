@@ -1,4 +1,4 @@
-import { constant } from '../src';
+import { constant } from '../src/index.js';
 
 describe('constant', () => {
   const object = { a: 1 };

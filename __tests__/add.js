@@ -1,4 +1,4 @@
-import { add } from '../src';
+import { add } from '../src/index.js';
 
 describe('Add', () => {
   test('adds 6 + 4 to equal 10', () => {

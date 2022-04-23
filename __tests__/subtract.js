@@ -1,4 +1,4 @@
-import { subtract } from '../src';
+import { subtract } from '../src/index.js';
 
 describe('Subtract', () => {
   test('subtracts 6 - 4 to equal 2', () => {

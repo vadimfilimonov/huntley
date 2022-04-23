@@ -1,4 +1,4 @@
-import { initial } from '../src';
+import { initial } from '../src/index.js';
 
 describe('Initial', () => {
   test('should work', () => {

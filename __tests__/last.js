@@ -1,4 +1,4 @@
-import { last } from '../src';
+import { last } from '../src/index.js';
 
 describe('Last', () => {
   test('should return undefined', () => {

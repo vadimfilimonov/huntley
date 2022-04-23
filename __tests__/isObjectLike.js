@@ -1,4 +1,4 @@
-import { isObjectLike } from '../src';
+import { isObjectLike } from '../src/index.js';
 
 describe('isObjectLike', () => {
   test('Should work', () => {

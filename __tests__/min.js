@@ -1,4 +1,4 @@
-import { min } from '../src';
+import { min } from '../src/index.js';
 
 describe('Min', () => {
   test('Array', () => {

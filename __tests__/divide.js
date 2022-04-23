@@ -1,4 +1,4 @@
-import { divide } from '../src';
+import { divide } from '../src/index.js';
 
 describe('divide', () => {
   test('Should work', () => {

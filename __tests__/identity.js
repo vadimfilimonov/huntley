@@ -1,4 +1,4 @@
-import { identity } from '../src';
+import { identity } from '../src/index.js';
 
 describe('Identity', () => {
   const object = { a: 1 };
