@@ -23,6 +23,7 @@ import mean from './mean.js';
 import min from './min.js';
 import multiply from './multiply.js';
 import noop from './noop.js';
+import nth from './nth.js';
 import partition from './partition.js';
 import reverse from './reverse.js';
 import size from './size.js';
@@ -61,6 +62,7 @@ export {
   min,
   multiply,
   noop,
+  nth,
   partition,
   reverse,
   size,
@@ -100,6 +102,7 @@ export default {
   min,
   multiply,
   noop,
+  nth,
   partition,
   reverse,
   size,
