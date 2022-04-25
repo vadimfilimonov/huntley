@@ -15,6 +15,7 @@ import isArray from './isArray.js';
 import isNil from './isNil.js';
 import isNull from './isNull.js';
 import isObjectLike from './isObjectLike.js';
+import isString from './isString.js';
 import isUndefined from './isUndefined.js';
 import last from './last.js';
 import lt from './lt.js';
@@ -54,6 +55,7 @@ export {
   isNil,
   isNull,
   isObjectLike,
+  isString,
   isUndefined,
   last,
   lt,
@@ -94,6 +96,7 @@ export default {
   isNil,
   isNull,
   isObjectLike,
+  isString,
   isUndefined,
   last,
   lt,
