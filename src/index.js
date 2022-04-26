@@ -12,6 +12,7 @@ import head from './head.js';
 import identity from './identity.js';
 import initial from './initial.js';
 import isArray from './isArray.js';
+import isMap from './isMap.js';
 import isNil from './isNil.js';
 import isNull from './isNull.js';
 import isObjectLike from './isObjectLike.js';
@@ -52,6 +53,7 @@ export {
   identity,
   initial,
   isArray,
+  isMap,
   isNil,
   isNull,
   isObjectLike,
@@ -93,6 +95,7 @@ export default {
   identity,
   initial,
   isArray,
+  isMap,
   isNil,
   isNull,
   isObjectLike,
