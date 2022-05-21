@@ -8,3 +8,6 @@ __tests__
 Makefile
 docs
 node_modules
+
+.idea
+.vscode
