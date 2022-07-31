@@ -16,6 +16,7 @@ import isArray from './isArray.js';
 import isMap from './isMap.js';
 import isNil from './isNil.js';
 import isNull from './isNull.js';
+import isNumber from './isNumber.js';
 import isObjectLike from './isObjectLike.js';
 import isString from './isString.js';
 import isUndefined from './isUndefined.js';
@@ -58,6 +59,7 @@ export {
   isMap,
   isNil,
   isNull,
+  isNumber,
   isObjectLike,
   isString,
   isUndefined,
@@ -101,6 +103,7 @@ export default {
   isMap,
   isNil,
   isNull,
+  isNumber,
   isObjectLike,
   isString,
   isUndefined,
