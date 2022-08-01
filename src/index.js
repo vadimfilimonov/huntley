@@ -14,6 +14,7 @@ import identity from './identity.js';
 import initial from './initial.js';
 import isArray from './isArray.js';
 import isMap from './isMap.js';
+import isNaN from './isNaN.js';
 import isNil from './isNil.js';
 import isNull from './isNull.js';
 import isNumber from './isNumber.js';
@@ -57,6 +58,7 @@ export {
   initial,
   isArray,
   isMap,
+  isNaN,
   isNil,
   isNull,
   isNumber,
@@ -101,6 +103,7 @@ export default {
   initial,
   isArray,
   isMap,
+  isNaN,
   isNil,
   isNull,
   isNumber,

@@ -15,7 +15,9 @@ describe('isNumber', () => {
     expect(isNumber([1, 2, 3])).toEqual(false);
     expect(isNumber({ a: 1 })).toEqual(false);
     expect(isNumber(true)).toEqual(false);
+    // eslint-disable-next-line prettier/prettier
     expect(isNumber(new Date)).toEqual(false);
+    // eslint-disable-next-line prettier/prettier
     expect(isNumber(new Error)).toEqual(false);
     expect(isNumber(/x/)).toEqual(false);
   });
