@@ -7,6 +7,7 @@ import defaultTo from './defaultTo.js';
 import divide from './divide.js';
 import drop from './drop.js';
 import dropRight from './dropRight.js';
+import fill from './fill.js';
 import first from './head.js';
 import gt from './gt.js';
 import head from './head.js';
@@ -51,6 +52,7 @@ export {
   divide,
   drop,
   dropRight,
+  fill,
   first,
   gt,
   head,
@@ -96,6 +98,7 @@ export default {
   divide,
   drop,
   dropRight,
+  fill,
   first,
   gt,
   head,
