@@ -22,6 +22,7 @@ import isNumber from './isNumber.js';
 import isObjectLike from './isObjectLike.js';
 import isString from './isString.js';
 import isUndefined from './isUndefined.js';
+import join from './join.js';
 import last from './last.js';
 import lt from './lt.js';
 import max from './max.js';
@@ -67,6 +68,7 @@ export {
   isObjectLike,
   isString,
   isUndefined,
+  join,
   last,
   lt,
   max,
@@ -113,6 +115,7 @@ export default {
   isObjectLike,
   isString,
   isUndefined,
+  join,
   last,
   lt,
   max,
