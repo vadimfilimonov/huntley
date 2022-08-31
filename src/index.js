@@ -44,6 +44,7 @@ import subtract from './subtract.js';
 import sum from './sum.js';
 import tail from './tail.js';
 import take from './take.js';
+import takeRight from './takeRight.js';
 import uniq from './uniq.js';
 import upperFirst from './upperFirst.js';
 
@@ -92,6 +93,7 @@ export {
   sum,
   tail,
   take,
+  takeRight,
   uniq,
   upperFirst,
 };
@@ -141,6 +143,7 @@ export default {
   sum,
   tail,
   take,
+  takeRight,
   uniq,
   upperFirst,
 };
