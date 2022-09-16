@@ -14,6 +14,7 @@ import gt from './gt.js';
 import head from './head.js';
 import identity from './identity.js';
 import initial from './initial.js';
+import invert from './invert.js';
 import isArray from './isArray.js';
 import isMap from './isMap.js';
 import isNaN from './isNaN.js';
@@ -64,6 +65,7 @@ export {
   head,
   identity,
   initial,
+  invert,
   isArray,
   isMap,
   isNaN,
@@ -115,6 +117,7 @@ export default {
   head,
   identity,
   initial,
+  invert,
   isArray,
   isMap,
   isNaN,
