@@ -2,6 +2,7 @@
 /* eslint-disable import/no-duplicates */
 import add from './add.js';
 import chunk from './chunk.js';
+import compact from './compact.js';
 import constant from './constant.js';
 import defaultTo from './defaultTo.js';
 import divide from './divide.js';
@@ -53,6 +54,7 @@ import upperFirst from './upperFirst.js';
 export {
   add,
   chunk,
+  compact,
   constant,
   defaultTo,
   divide,
@@ -105,6 +107,7 @@ export {
 export default {
   add,
   chunk,
+  compact,
   constant,
   defaultTo,
   divide,
