@@ -35,6 +35,7 @@ import multiply from './multiply.js';
 import noop from './noop.js';
 import nth from './nth.js';
 import partition from './partition.js';
+import remove from './remove.js';
 import reverse from './reverse.js';
 import size from './size.js';
 import stubArray from './stubArray.js';
@@ -87,6 +88,7 @@ export {
   noop,
   nth,
   partition,
+  remove,
   reverse,
   size,
   stubArray,
@@ -140,6 +142,7 @@ export default {
   noop,
   nth,
   partition,
+  remove,
   reverse,
   size,
   stubArray,
