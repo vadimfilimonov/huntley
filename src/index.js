@@ -3,6 +3,7 @@
 import add from './add.js';
 import chunk from './chunk.js';
 import compact from './compact.js';
+import concat from './concat.js';
 import constant from './constant.js';
 import defaultTo from './defaultTo.js';
 import divide from './divide.js';
@@ -56,6 +57,7 @@ export {
   add,
   chunk,
   compact,
+  concat,
   constant,
   defaultTo,
   divide,
@@ -110,6 +112,7 @@ export default {
   add,
   chunk,
   compact,
+  concat,
   constant,
   defaultTo,
   divide,
