@@ -11,6 +11,7 @@ import drop from './drop.js';
 import dropRight from './dropRight.js';
 import fill from './fill.js';
 import filter from './filter.js';
+import flatten from './flatten.js';
 import first from './head.js';
 import gt from './gt.js';
 import head from './head.js';
@@ -65,6 +66,7 @@ export {
   dropRight,
   fill,
   filter,
+  flatten,
   first,
   gt,
   head,
@@ -120,6 +122,7 @@ export default {
   dropRight,
   fill,
   filter,
+  flatten,
   first,
   gt,
   head,
