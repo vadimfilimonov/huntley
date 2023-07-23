@@ -16,11 +16,21 @@ const flattenDepth = (array, depth = 1) => {
     return [];
   }
 
-  if (depth <= 0) {
-    return array;
-  }
+  const iter = (items, currentDepth) => {
+    if (currentDepth > depth) {
+      return items;
+    }
 
-  return flattenDepth(array.flat(), depth - 1);
+    return items.reduce((acc, item) => {
+      if (!Array.isArray(item)) {
+        return [...acc, item];
+      }
+
+      return [...acc, ...iter(item, currentDepth + 1)];
+    }, []);
+  };
+
+  return iter(array, 1);
 };
 
 export default flattenDepth;
