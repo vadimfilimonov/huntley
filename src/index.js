@@ -40,6 +40,7 @@ import nth from './nth.js';
 import partition from './partition.js';
 import remove from './remove.js';
 import reverse from './reverse.js';
+import shuffle from './shuffle.js';
 import size from './size.js';
 import stubArray from './stubArray.js';
 import stubFalse from './stubFalse.js';
@@ -96,6 +97,7 @@ export {
   partition,
   remove,
   reverse,
+  shuffle,
   size,
   stubArray,
   stubFalse,
@@ -153,6 +155,7 @@ export default {
   partition,
   remove,
   reverse,
+  shuffle,
   size,
   stubArray,
   stubFalse,
