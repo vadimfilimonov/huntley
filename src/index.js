@@ -20,6 +20,7 @@ import identity from './identity.js';
 import initial from './initial.js';
 import invert from './invert.js';
 import isArray from './isArray.js';
+import isFunction from './isFunction.js';
 import isMap from './isMap.js';
 import isNaN from './isNaN.js';
 import isNil from './isNil.js';
@@ -77,6 +78,7 @@ export {
   initial,
   invert,
   isArray,
+  isFunction,
   isMap,
   isNaN,
   isNil,
@@ -135,6 +137,7 @@ export default {
   initial,
   invert,
   isArray,
+  isFunction,
   isMap,
   isNaN,
   isNil,
