@@ -53,6 +53,7 @@ import sum from './sum.js';
 import tail from './tail.js';
 import take from './take.js';
 import takeRight from './takeRight.js';
+import takeWhile from './takeWhile.js';
 import unary from './unary.js';
 import uniq from './uniq.js';
 import upperFirst from './upperFirst.js';
@@ -111,6 +112,7 @@ export {
   tail,
   take,
   takeRight,
+  takeWhile,
   unary,
   uniq,
   upperFirst,
@@ -170,6 +172,7 @@ export default {
   tail,
   take,
   takeRight,
+  takeWhile,
   unary,
   uniq,
   upperFirst,
