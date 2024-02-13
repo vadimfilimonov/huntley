@@ -13,6 +13,7 @@ import fill from './fill.js';
 import filter from './filter.js';
 import flatten from './flatten.js';
 import flattenDepth from './flattenDepth.js';
+import forEach from './forEach.js';
 import first from './head.js';
 import gt from './gt.js';
 import head from './head.js';
@@ -72,6 +73,7 @@ export {
   filter,
   flatten,
   flattenDepth,
+  forEach,
   first,
   gt,
   head,
@@ -132,6 +134,7 @@ export default {
   filter,
   flatten,
   flattenDepth,
+  forEach,
   first,
   gt,
   head,
