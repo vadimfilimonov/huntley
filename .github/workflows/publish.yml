@@ -1,20 +1,33 @@
 name: Publish Package to npmjs
 on:
-  release:
-    types: [published]
+  push:
+    paths:
+      - 'package.json'
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
+      packages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
+      - run: sudo apt-get install -y jq
       - run: npm ci
+      - id: get_version
+        run: echo "VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
+      - run: |
+          if git log -1 --pretty=%B | grep -q "version ${VERSION}"; then
+            echo "Version updated to ${VERSION}, proceeding with publish."
+          else
+            echo "Version not updated, skipping publish."
+            exit 0
+          fi
+      - run: npm whoami
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
