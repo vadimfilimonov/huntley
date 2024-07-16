@@ -38,128 +38,131 @@
 *   [flattenDepth][36]
     *   [Parameters][37]
     *   [Examples][38]
-*   [gt][39]
+*   [forEach][39]
     *   [Parameters][40]
     *   [Examples][41]
-*   [head][42]
+*   [gt][42]
     *   [Parameters][43]
     *   [Examples][44]
-*   [identity][45]
+*   [head][45]
     *   [Parameters][46]
     *   [Examples][47]
-*   [initial][48]
+*   [identity][48]
     *   [Parameters][49]
     *   [Examples][50]
-*   [invert][51]
+*   [initial][51]
     *   [Parameters][52]
     *   [Examples][53]
-*   [isArray][54]
+*   [invert][54]
     *   [Parameters][55]
     *   [Examples][56]
-*   [isFunction][57]
+*   [isArray][57]
     *   [Parameters][58]
     *   [Examples][59]
-*   [isMap][60]
+*   [isFunction][60]
     *   [Parameters][61]
     *   [Examples][62]
-*   [isNaN][63]
+*   [isMap][63]
     *   [Parameters][64]
     *   [Examples][65]
-*   [isNil][66]
+*   [isNaN][66]
     *   [Parameters][67]
     *   [Examples][68]
-*   [isNull][69]
+*   [isNil][69]
     *   [Parameters][70]
     *   [Examples][71]
-*   [isNumber][72]
+*   [isNull][72]
     *   [Parameters][73]
     *   [Examples][74]
-*   [isObjectLike][75]
+*   [isNumber][75]
     *   [Parameters][76]
     *   [Examples][77]
-*   [isString][78]
+*   [isObjectLike][78]
     *   [Parameters][79]
     *   [Examples][80]
-*   [isUndefined][81]
+*   [isString][81]
     *   [Parameters][82]
     *   [Examples][83]
-*   [join][84]
+*   [isUndefined][84]
     *   [Parameters][85]
     *   [Examples][86]
-*   [last][87]
+*   [join][87]
     *   [Parameters][88]
     *   [Examples][89]
-*   [lt][90]
+*   [last][90]
     *   [Parameters][91]
     *   [Examples][92]
-*   [max][93]
+*   [lt][93]
     *   [Parameters][94]
     *   [Examples][95]
-*   [mean][96]
+*   [max][96]
     *   [Parameters][97]
     *   [Examples][98]
-*   [min][99]
+*   [mean][99]
     *   [Parameters][100]
     *   [Examples][101]
-*   [multiply][102]
+*   [min][102]
     *   [Parameters][103]
     *   [Examples][104]
-*   [noop][105]
-    *   [Examples][106]
-*   [nth][107]
-    *   [Parameters][108]
+*   [multiply][105]
+    *   [Parameters][106]
+    *   [Examples][107]
+*   [noop][108]
     *   [Examples][109]
-*   [partition][110]
+*   [nth][110]
     *   [Parameters][111]
     *   [Examples][112]
-*   [remove][113]
+*   [partition][113]
     *   [Parameters][114]
     *   [Examples][115]
-*   [reverse][116]
+*   [remove][116]
     *   [Parameters][117]
     *   [Examples][118]
-*   [shuffle][119]
+*   [reverse][119]
     *   [Parameters][120]
     *   [Examples][121]
-*   [size][122]
+*   [shuffle][122]
     *   [Parameters][123]
     *   [Examples][124]
-*   [stubArray][125]
-    *   [Examples][126]
-*   [stubFalse][127]
-    *   [Examples][128]
-*   [stubObject][129]
-    *   [Examples][130]
-*   [stubString][131]
-    *   [Examples][132]
-*   [stubTrue][133]
-    *   [Examples][134]
-*   [subtract][135]
-    *   [Parameters][136]
+*   [size][125]
+    *   [Parameters][126]
+    *   [Examples][127]
+*   [stubArray][128]
+    *   [Examples][129]
+*   [stubFalse][130]
+    *   [Examples][131]
+*   [stubObject][132]
+    *   [Examples][133]
+*   [stubString][134]
+    *   [Examples][135]
+*   [stubTrue][136]
     *   [Examples][137]
-*   [sum][138]
+*   [subtract][138]
     *   [Parameters][139]
     *   [Examples][140]
-*   [tail][141]
+*   [sum][141]
     *   [Parameters][142]
     *   [Examples][143]
-*   [take][144]
+*   [tail][144]
     *   [Parameters][145]
     *   [Examples][146]
-*   [takeRight][147]
+*   [take][147]
     *   [Parameters][148]
     *   [Examples][149]
-*   [takeWhile][150]
+*   [takeRight][150]
     *   [Parameters][151]
-*   [unary][152]
-    *   [Parameters][153]
-    *   [Examples][154]
-*   [uniq][155]
+    *   [Examples][152]
+*   [takeWhile][153]
+    *   [Parameters][154]
+*   [unary][155]
     *   [Parameters][156]
     *   [Examples][157]
-*   [upperFirst][158]
+*   [uniq][158]
     *   [Parameters][159]
     *   [Examples][160]
+*   [upperFirst][161]
+    *   [Parameters][162]
+    *   [Examples][163]
 
 ## add
 
@@ -167,8 +170,8 @@ Adds two numbers.
 
 ### Parameters
 
-*   `augend` **[number][161]** The first number in an addition.
-*   `addend` **[number][161]** The second number in an addition.
+*   `augend` **[number][164]** The first number in an addition.
+*   `addend` **[number][164]** The second number in an addition.
 
 ### Examples
 
@@ -177,7 +180,7 @@ add(6, 4);
 // => 10
 ```
 
-Returns **[number][161]** Returns the total.
+Returns **[number][164]** Returns the total.
 
 ## chunk
 
@@ -185,8 +188,8 @@ Creates an array of elements split into groups the length of `size`. If `array` 
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to process.
-*   `size` **[number][161]** The length of each chunk. (optional, default `1`)
+*   `array` **[Array][165]** The array to process.
+*   `size` **[number][164]** The length of each chunk. (optional, default `1`)
 
 ### Examples
 
@@ -198,7 +201,7 @@ chunk(['a', 'b', 'c', 'd'], 3);
 // => [['a', 'b', 'c'], ['d']]
 ```
 
-Returns **[Array][162]** Returns the new array of chunks.
+Returns **[Array][165]** Returns the new array of chunks.
 
 ## compact
 
@@ -206,7 +209,7 @@ Creates an array with all falsey values removed. The values `false`, `null`, `0`
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to compact
+*   `array` **[Array][165]** The array to compact
 
 ### Examples
 
@@ -215,7 +218,7 @@ compact([0, 1, false, 2, '', 3]);
 // => [1, 2, 3]
 ```
 
-Returns **[Array][162]** Returns the new array of filtered values
+Returns **[Array][165]** Returns the new array of filtered values
 
 ## concat
 
@@ -223,7 +226,7 @@ Creates a new array concatenating `array` with any additional arrays and/or valu
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to concatenate.
+*   `array` **[Array][165]** The array to concatenate.
 *   `values` **...any** The values to concatenate.
 
 ### Examples
@@ -239,7 +242,7 @@ console.log(array);
 // => [1]
 ```
 
-Returns **[Array][162]** Returns the new concatenated array.
+Returns **[Array][165]** Returns the new concatenated array.
 
 ## constant
 
@@ -257,7 +260,7 @@ func();
 // => { a: 1 }
 ```
 
-Returns **[Function][163]** Returns the new constant function.
+Returns **[Function][166]** Returns the new constant function.
 
 ## defaultTo
 
@@ -279,7 +282,7 @@ defaultTo(undefined, 10);
 // => 10
 ```
 
-Returns **[boolean][164]**&#x20;
+Returns **[boolean][167]**&#x20;
 
 ## divide
 
@@ -287,8 +290,8 @@ Divide two numbers.
 
 ### Parameters
 
-*   `dividend` **[number][161]**&#x20;
-*   `divisor` **[number][161]**&#x20;
+*   `dividend` **[number][164]**&#x20;
+*   `divisor` **[number][164]**&#x20;
 
 ### Examples
 
@@ -297,7 +300,7 @@ divide(6, 4);
 // => 1.5
 ```
 
-Returns **[number][161]** Returns the quotient
+Returns **[number][164]** Returns the quotient
 
 ## drop
 
@@ -305,8 +308,8 @@ Creates a slice of `array` with `n` elements dropped from the beginning.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `n` **[number][161]** The number of elements to drop. (optional, default `1`)
+*   `array` **[Array][165]** The array to query.
+*   `n` **[number][164]** The number of elements to drop. (optional, default `1`)
 
 ### Examples
 
@@ -324,7 +327,7 @@ drop([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## dropRight
 
@@ -332,8 +335,8 @@ Creates a slice of `array` with `n` elements dropped from the end.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `n` **[number][161]** The number of elements to drop. (optional, default `1`)
+*   `array` **[Array][165]** The array to query.
+*   `n` **[number][164]** The number of elements to drop. (optional, default `1`)
 
 ### Examples
 
@@ -351,7 +354,7 @@ dropRight([1, 2, 3], 0);
 // => [1, 2, 3]
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## fill
 
@@ -359,12 +362,12 @@ Fills elements of `array` with `value` from `start` up to, but not including, `e
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to fill.
+*   `array` **[Array][165]** The array to fill.
 *   `value` **any** The value to fill `array` with.
-*   `start` **[number][161]** The start position. (optional, default `0`)
-*   `end` **[number][161]** The end position. (optional, default `array.length`)
+*   `start` **[number][164]** The start position. (optional, default `0`)
+*   `end` **[number][164]** The end position. (optional, default `array.length`)
 
-Returns **[Array][162]** Returns `array`.
+Returns **[Array][165]** Returns `array`.
 
 ## filter
 
@@ -372,8 +375,8 @@ Iterates over elements of `collection`, returning an array of all elements `pred
 
 ### Parameters
 
-*   `collection` **[Array][162]** The collection to iterate over.
-*   `predicate` **[Function][163]** The function invoked per iteration.
+*   `collection` **[Array][165]** The collection to iterate over.
+*   `predicate` **[Function][166]** The function invoked per iteration.
 
 ### Examples
 
@@ -387,7 +390,7 @@ _.filter(users, (o) => !o.active);
 // => objects for ['fred']
 ```
 
-Returns **[Array][162]** Returns the new filtered array.
+Returns **[Array][165]** Returns the new filtered array.
 
 ## flatten
 
@@ -395,7 +398,7 @@ Flattens `array` a single level deep
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to flatten
+*   `array` **[Array][165]** The array to flatten
 
 ### Examples
 
@@ -404,7 +407,7 @@ flatten([1, [2, [3, [4]], 5]]);
 => [1, 2, [3, [4]], 5]
 ```
 
-Returns **[Array][162]** Returns the new flattened array
+Returns **[Array][165]** Returns the new flattened array
 
 ## flattenDepth
 
@@ -412,8 +415,8 @@ Recursively flatten `array` up to `depth` times.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to flatten.
-*   `depth` **[number][161]** The maximum recursion depth. (optional, default `1`)
+*   `array` **[Array][165]** The array to flatten.
+*   `depth` **[number][164]** The maximum recursion depth. (optional, default `1`)
 
 ### Examples
 
@@ -422,7 +425,25 @@ flattenDepth([1, [2, [3, [4]], 5]], 2);
 => [1, 2, 3, [4], 5]
 ```
 
-Returns **[Array][162]** Returns the new flattened array.
+Returns **[Array][165]** Returns the new flattened array.
+
+## forEach
+
+Iterates over elements of `collection` and invokes `iteratee` for each element.
+
+### Parameters
+
+*   `collection` **[Array][165]** The collection to iterate over.
+*   `iteratee` **[Function][166]** The function invoked per iteration. (optional, default `noop`)
+
+### Examples
+
+```javascript
+forEach([1, 2]);
+// => 1
+```
+
+Returns **any** Returns collection.
 
 ## gt
 
@@ -446,7 +467,7 @@ gt(1, 3);
 // => false
 ```
 
-Returns **[boolean][164]** Returns true if value is greater than other, else false.
+Returns **[boolean][167]** Returns true if value is greater than other, else false.
 
 ## head
 
@@ -454,7 +475,7 @@ Gets the first element of array.
 
 ### Parameters
 
-*   `array` **[Array][162]**&#x20;
+*   `array` **[Array][165]**&#x20;
 
 ### Examples
 
@@ -495,7 +516,7 @@ Gets all but the last element of `array`.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
+*   `array` **[Array][165]** The array to query.
 
 ### Examples
 
@@ -504,7 +525,7 @@ initial([1, 2, 3]);
 // => [1, 2]
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## invert
 
@@ -512,7 +533,7 @@ Creates an object composed of the inverted keys and values of `object`. If `obje
 
 ### Parameters
 
-*   `object` **[Object][165]** The object to invert.
+*   `object` **[Object][168]** The object to invert.
 
 ### Examples
 
@@ -521,7 +542,7 @@ invert({ a: 1, b: 2, c: 1 });
 // => { 1: 'c', 2: 'b' }
 ```
 
-Returns **[Object][165]** Returns the new inverted object.
+Returns **[Object][168]** Returns the new inverted object.
 
 ## isArray
 
@@ -544,7 +565,7 @@ isArray('abc');
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is an array, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is an array, else `false`.
 
 ## isFunction
 
@@ -570,7 +591,7 @@ isFunction(/abc/)
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is a function, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is a function, else `false`.
 
 ## isMap
 
@@ -590,7 +611,7 @@ isMap(new WeakMap);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is map, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is map, else `false`.
 
 ## isNaN
 
@@ -613,7 +634,7 @@ isNaN(undefined);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is a `NaN`, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is a `NaN`, else `false`.
 
 ## isNil
 
@@ -636,7 +657,7 @@ isNil(NaN);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is nullish, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is nullish, else `false`.
 
 ## isNull
 
@@ -656,7 +677,7 @@ isNull(undefined);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is `null`, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is `null`, else `false`.
 
 ## isNumber
 
@@ -676,7 +697,7 @@ Number('3');
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is a number, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is a number, else `false`.
 
 ## isObjectLike
 
@@ -702,7 +723,7 @@ isObjectLike(null);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is object-like, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is object-like, else `false`.
 
 ## isString
 
@@ -722,7 +743,7 @@ isString(1);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is a string, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is a string, else `false`.
 
 ## isUndefined
 
@@ -742,7 +763,7 @@ isUndefined(null);
 // => false
 ```
 
-Returns **[boolean][164]** Returns `true` if `value` is `undefined`, else `false`.
+Returns **[boolean][167]** Returns `true` if `value` is `undefined`, else `false`.
 
 ## join
 
@@ -750,8 +771,8 @@ Converts all elements in `array` into a string separated by `separator`
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to convert.
-*   `separator` **[string][166]** The element separator. (optional, default `','`)
+*   `array` **[Array][165]** The array to convert.
+*   `separator` **[string][169]** The element separator. (optional, default `','`)
 
 ### Examples
 
@@ -760,7 +781,7 @@ join(['a', 'b', 'c'], '~');
 // => a~b~c
 ```
 
-Returns **[string][166]** Returns the joined string.
+Returns **[string][169]** Returns the joined string.
 
 ## last
 
@@ -768,7 +789,7 @@ Gets the last element of array.
 
 ### Parameters
 
-*   `array` **[Array][162]**&#x20;
+*   `array` **[Array][165]**&#x20;
 
 ### Examples
 
@@ -801,7 +822,7 @@ lt(3, 1);
 // => false
 ```
 
-Returns **[boolean][164]** Returns true if value is less than other, else false.
+Returns **[boolean][167]** Returns true if value is less than other, else false.
 
 ## max
 
@@ -809,7 +830,7 @@ Computes the maximum value of `array`. If `array` is empty or falsey, `undefined
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to iterate over.
+*   `array` **[Array][165]** The array to iterate over.
 
 ### Examples
 
@@ -829,7 +850,7 @@ Computes the mean of the values in `array`.
 
 ### Parameters
 
-*   `array` **[Array][162]**&#x20;
+*   `array` **[Array][165]**&#x20;
 
 ### Examples
 
@@ -838,7 +859,7 @@ mean([4, 2, 8, 6]);
 // => 5
 ```
 
-Returns **[number][161]** Returns the mean.
+Returns **[number][164]** Returns the mean.
 
 ## min
 
@@ -846,7 +867,7 @@ Computes the minimum value of `array`. If `array` is empty or falsey, `undefined
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to iterate over.
+*   `array` **[Array][165]** The array to iterate over.
 
 ### Examples
 
@@ -866,8 +887,8 @@ Multiply two numbers.
 
 ### Parameters
 
-*   `multiplier` **[number][161]**&#x20;
-*   `multiplicand` **[number][161]**&#x20;
+*   `multiplier` **[number][164]**&#x20;
+*   `multiplicand` **[number][164]**&#x20;
 
 ### Examples
 
@@ -876,7 +897,7 @@ multiply(6, 4);
 // => 24
 ```
 
-Returns **[number][161]** Returns the product
+Returns **[number][164]** Returns the product
 
 ## noop
 
@@ -895,8 +916,8 @@ Gets the element at index `n` of `array`. If `n` is negative, the nth element fr
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `index` **[number][161]** The index of the element to return. (optional, default `0`)
+*   `array` **[Array][165]** The array to query.
+*   `index` **[number][164]** The index of the element to return. (optional, default `0`)
 
 ### Examples
 
@@ -916,8 +937,8 @@ Splits a collection into two by callback.
 
 ### Parameters
 
-*   `collection` **([Array][162] | [object][165])** The collection to iterate over.
-*   `predicate` **[Function][163]** The function invoked per iteration.
+*   `collection` **([Array][165] | [object][168])** The collection to iterate over.
+*   `predicate` **[Function][166]** The function invoked per iteration.
 
 ### Examples
 
@@ -932,7 +953,7 @@ partition(users, user => user.age >= 21);
 // => objects for [['adam, carl'], ['ivan']]
 ```
 
-Returns **[Array][162]** Returns the array of grouped elements.
+Returns **[Array][165]** Returns the array of grouped elements.
 
 ## remove
 
@@ -940,8 +961,8 @@ Removes all elements from array that predicate returns truthy for and returns an
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to modify.
-*   `predicate` **[Function][163]** The function invoked per iteration.
+*   `array` **[Array][165]** The array to modify.
+*   `predicate` **[Function][166]** The function invoked per iteration.
 
 ### Examples
 
@@ -956,16 +977,16 @@ console.log(evens);
 // => [2, 4];
 ```
 
-Returns **[Array][162]** Returns the new array of removed elements.
+Returns **[Array][165]** Returns the new array of removed elements.
 
 ## reverse
 
 Reverses `array` so that the first element becomes the last, the second element becomes the second to last, and so on.
-**Note:** This method mutates `array` and is based on [Array#reverse][167].
+**Note:** This method mutates `array` and is based on [Array#reverse][170].
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to modify.
+*   `array` **[Array][165]** The array to modify.
 
 ### Examples
 
@@ -974,7 +995,7 @@ reverse([1, 2, 3]);
 // => true
 ```
 
-Returns **[Array][162]** Returns `array`.
+Returns **[Array][165]** Returns `array`.
 
 ## shuffle
 
@@ -982,7 +1003,7 @@ Creates an array of shuffled values, using a version of the `Fisher-Yates shuffl
 
 ### Parameters
 
-*   `collection` **([Array][162] | [Object][165])** The collection to shuffle.
+*   `collection` **([Array][165] | [Object][168])** The collection to shuffle.
 
 ### Examples
 
@@ -991,7 +1012,7 @@ shuffle([1, 2, 3, 4]);
 // => [4, 1, 3, 2]
 ```
 
-Returns **[Array][162]** Returns the new shuffled array.
+Returns **[Array][165]** Returns the new shuffled array.
 
 ## size
 
@@ -999,7 +1020,7 @@ Gets the size of collection.
 
 ### Parameters
 
-*   `collection` **([Array][162] | [Object][165] | [string][166])**&#x20;
+*   `collection` **([Array][165] | [Object][168] | [string][169])**&#x20;
 
 ### Examples
 
@@ -1014,7 +1035,7 @@ size('cobbles');
 // => 7
 ```
 
-Returns **[number][161]**&#x20;
+Returns **[number][164]**&#x20;
 
 ## stubArray
 
@@ -1027,7 +1048,7 @@ stubArray();
 // => []
 ```
 
-Returns **[Array][162]** Returns the new empty array
+Returns **[Array][165]** Returns the new empty array
 
 ## stubFalse
 
@@ -1040,7 +1061,7 @@ stubFalse();
 // => false
 ```
 
-Returns **[boolean][164]**&#x20;
+Returns **[boolean][167]**&#x20;
 
 ## stubObject
 
@@ -1053,7 +1074,7 @@ stubObject();
 // => {}
 ```
 
-Returns **[Object][165]** Returns the new empty object
+Returns **[Object][168]** Returns the new empty object
 
 ## stubString
 
@@ -1066,7 +1087,7 @@ stubString();
 // => ''
 ```
 
-Returns **[string][166]** Returns the empty string
+Returns **[string][169]** Returns the empty string
 
 ## stubTrue
 
@@ -1079,7 +1100,7 @@ stubTrue();
 // => true
 ```
 
-Returns **[boolean][164]**&#x20;
+Returns **[boolean][167]**&#x20;
 
 ## subtract
 
@@ -1087,8 +1108,8 @@ Subtract two numbers.
 
 ### Parameters
 
-*   `minuend` **[number][161]**&#x20;
-*   `subtrahend` **[number][161]**&#x20;
+*   `minuend` **[number][164]**&#x20;
+*   `subtrahend` **[number][164]**&#x20;
 
 ### Examples
 
@@ -1097,7 +1118,7 @@ subtract(6, 4);
 // => 2
 ```
 
-Returns **[number][161]** The difference
+Returns **[number][164]** The difference
 
 ## sum
 
@@ -1105,7 +1126,7 @@ Computes the sum of the values in array.
 
 ### Parameters
 
-*   `array` **[Array][162]**&#x20;
+*   `array` **[Array][165]**&#x20;
 
 ### Examples
 
@@ -1114,7 +1135,7 @@ sum([4, 2, 8, 6]);
 // => 20
 ```
 
-Returns **[number][161]** The sum
+Returns **[number][164]** The sum
 
 ## tail
 
@@ -1122,7 +1143,7 @@ Gets all but the first element of `array`.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query
+*   `array` **[Array][165]** The array to query
 
 ### Examples
 
@@ -1131,7 +1152,7 @@ tail([1, 2, 3]);
 // => [2, 3]
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## take
 
@@ -1139,8 +1160,8 @@ Creates a `slice` of array with `n` elements taken from the beginning.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `n` **[number][161]** The number of elements to take. (optional, default `1`)
+*   `array` **[Array][165]** The array to query.
+*   `n` **[number][164]** The number of elements to take. (optional, default `1`)
 
 ### Examples
 
@@ -1158,7 +1179,7 @@ take([1, 2, 3], 0);
 // => []
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## takeRight
 
@@ -1166,8 +1187,8 @@ Creates a slice of `array` with `n` elements taken from the end.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `n` **[number][161]** The number of elements to take. (optional, default `1`)
+*   `array` **[Array][165]** The array to query.
+*   `n` **[number][164]** The number of elements to take. (optional, default `1`)
 
 ### Examples
 
@@ -1185,7 +1206,7 @@ takeRight([1, 2, 3], 0);
 // => []
 ```
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## takeWhile
 
@@ -1193,10 +1214,10 @@ Creates a `slice` of array with `n` elements taken from the beginning.
 
 ### Parameters
 
-*   `array` **[Array][162]** The array to query.
-*   `predicate` **[Function][163]** The function invoked per iteration.
+*   `array` **[Array][165]** The array to query.
+*   `predicate` **[Function][166]** The function invoked per iteration.
 
-Returns **[Array][162]** Returns the slice of `array`.
+Returns **[Array][165]** Returns the slice of `array`.
 
 ## unary
 
@@ -1204,7 +1225,7 @@ Creates a function that accepts up to one argument, ignoring any additional argu
 
 ### Parameters
 
-*   `func` **[Function][163]** The function to cap arguments for.
+*   `func` **[Function][166]** The function to cap arguments for.
 
 ### Examples
 
@@ -1213,7 +1234,7 @@ Creates a function that accepts up to one argument, ignoring any additional argu
 // => [6, 8, 10]
 ```
 
-Returns **[Function][163]** Returns the new capped function.
+Returns **[Function][166]** Returns the new capped function.
 
 ## uniq
 
@@ -1221,7 +1242,7 @@ Creates a duplicate-free version of an array.
 
 ### Parameters
 
-*   `array` **[Array][162]**&#x20;
+*   `array` **[Array][165]**&#x20;
 
 ### Examples
 
@@ -1230,7 +1251,7 @@ uniq([2, 1, 2]);
 // => [2, 1]
 ```
 
-Returns **[Array][162]**&#x20;
+Returns **[Array][165]**&#x20;
 
 ## upperFirst
 
@@ -1238,7 +1259,7 @@ Converts the first character of `string` to upper case.
 
 ### Parameters
 
-*   `string` **[string][166]** The string to convert. (optional, default `''`)
+*   `string` **[string][169]** The string to convert. (optional, default `''`)
 
 ### Examples
 
@@ -1250,7 +1271,7 @@ upperFirst('FRED');
 // => 'FRED'
 ```
 
-Returns **[string][166]** Returns the converted string.
+Returns **[string][169]** Returns the converted string.
 
 [1]: #add
 
@@ -1328,260 +1349,266 @@ Returns **[string][166]** Returns the converted string.
 
 [38]: #examples-11
 
-[39]: #gt
+[39]: #foreach
 
 [40]: #parameters-13
 
 [41]: #examples-12
 
-[42]: #head
+[42]: #gt
 
 [43]: #parameters-14
 
 [44]: #examples-13
 
-[45]: #identity
+[45]: #head
 
 [46]: #parameters-15
 
 [47]: #examples-14
 
-[48]: #initial
+[48]: #identity
 
 [49]: #parameters-16
 
 [50]: #examples-15
 
-[51]: #invert
+[51]: #initial
 
 [52]: #parameters-17
 
 [53]: #examples-16
 
-[54]: #isarray
+[54]: #invert
 
 [55]: #parameters-18
 
 [56]: #examples-17
 
-[57]: #isfunction
+[57]: #isarray
 
 [58]: #parameters-19
 
 [59]: #examples-18
 
-[60]: #ismap
+[60]: #isfunction
 
 [61]: #parameters-20
 
 [62]: #examples-19
 
-[63]: #isnan
+[63]: #ismap
 
 [64]: #parameters-21
 
 [65]: #examples-20
 
-[66]: #isnil
+[66]: #isnan
 
 [67]: #parameters-22
 
 [68]: #examples-21
 
-[69]: #isnull
+[69]: #isnil
 
 [70]: #parameters-23
 
 [71]: #examples-22
 
-[72]: #isnumber
+[72]: #isnull
 
 [73]: #parameters-24
 
 [74]: #examples-23
 
-[75]: #isobjectlike
+[75]: #isnumber
 
 [76]: #parameters-25
 
 [77]: #examples-24
 
-[78]: #isstring
+[78]: #isobjectlike
 
 [79]: #parameters-26
 
 [80]: #examples-25
 
-[81]: #isundefined
+[81]: #isstring
 
 [82]: #parameters-27
 
 [83]: #examples-26
 
-[84]: #join
+[84]: #isundefined
 
 [85]: #parameters-28
 
 [86]: #examples-27
 
-[87]: #last
+[87]: #join
 
 [88]: #parameters-29
 
 [89]: #examples-28
 
-[90]: #lt
+[90]: #last
 
 [91]: #parameters-30
 
 [92]: #examples-29
 
-[93]: #max
+[93]: #lt
 
 [94]: #parameters-31
 
 [95]: #examples-30
 
-[96]: #mean
+[96]: #max
 
 [97]: #parameters-32
 
 [98]: #examples-31
 
-[99]: #min
+[99]: #mean
 
 [100]: #parameters-33
 
 [101]: #examples-32
 
-[102]: #multiply
+[102]: #min
 
 [103]: #parameters-34
 
 [104]: #examples-33
 
-[105]: #noop
+[105]: #multiply
 
-[106]: #examples-34
+[106]: #parameters-35
 
-[107]: #nth
+[107]: #examples-34
 
-[108]: #parameters-35
+[108]: #noop
 
 [109]: #examples-35
 
-[110]: #partition
+[110]: #nth
 
 [111]: #parameters-36
 
 [112]: #examples-36
 
-[113]: #remove
+[113]: #partition
 
 [114]: #parameters-37
 
 [115]: #examples-37
 
-[116]: #reverse
+[116]: #remove
 
 [117]: #parameters-38
 
 [118]: #examples-38
 
-[119]: #shuffle
+[119]: #reverse
 
 [120]: #parameters-39
 
 [121]: #examples-39
 
-[122]: #size
+[122]: #shuffle
 
 [123]: #parameters-40
 
 [124]: #examples-40
 
-[125]: #stubarray
+[125]: #size
 
-[126]: #examples-41
+[126]: #parameters-41
 
-[127]: #stubfalse
+[127]: #examples-41
 
-[128]: #examples-42
+[128]: #stubarray
 
-[129]: #stubobject
+[129]: #examples-42
 
-[130]: #examples-43
+[130]: #stubfalse
 
-[131]: #stubstring
+[131]: #examples-43
 
-[132]: #examples-44
+[132]: #stubobject
 
-[133]: #stubtrue
+[133]: #examples-44
 
-[134]: #examples-45
+[134]: #stubstring
 
-[135]: #subtract
+[135]: #examples-45
 
-[136]: #parameters-41
+[136]: #stubtrue
 
 [137]: #examples-46
 
-[138]: #sum
+[138]: #subtract
 
 [139]: #parameters-42
 
 [140]: #examples-47
 
-[141]: #tail
+[141]: #sum
 
 [142]: #parameters-43
 
 [143]: #examples-48
 
-[144]: #take
+[144]: #tail
 
 [145]: #parameters-44
 
 [146]: #examples-49
 
-[147]: #takeright
+[147]: #take
 
 [148]: #parameters-45
 
 [149]: #examples-50
 
-[150]: #takewhile
+[150]: #takeright
 
 [151]: #parameters-46
 
-[152]: #unary
+[152]: #examples-51
 
-[153]: #parameters-47
+[153]: #takewhile
 
-[154]: #examples-51
+[154]: #parameters-47
 
-[155]: #uniq
+[155]: #unary
 
 [156]: #parameters-48
 
 [157]: #examples-52
 
-[158]: #upperfirst
+[158]: #uniq
 
 [159]: #parameters-49
 
 [160]: #examples-53
 
-[161]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+[161]: #upperfirst
 
-[162]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+[162]: #parameters-50
 
-[163]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
+[163]: #examples-54
 
-[164]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[164]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
 
-[165]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+[165]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
 
-[166]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+[166]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/function
 
-[167]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+[167]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+
+[168]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[169]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[170]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
