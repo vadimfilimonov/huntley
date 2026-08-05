@@ -12,9 +12,19 @@
  * // => 1.5
  */
 const divide = (dividend, divisor) => {
-  const normalizedDividend = dividend || 1;
-  const normalizedDivisor = divisor !== undefined ? divisor : 1;
-  return normalizedDividend / normalizedDivisor;
+  if (dividend === undefined && divisor === undefined) {
+    return 1;
+  }
+
+  if (dividend === undefined) {
+    return divisor;
+  }
+
+  if (divisor === undefined) {
+    return dividend;
+  }
+
+  return dividend / divisor;
 };
 
 export default divide;
