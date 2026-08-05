@@ -7,10 +7,10 @@ import isObjectLike from './isObjectLike.js';
  * @returns {boolean} - Returns `true` if `value` is map, else `false`.
  * @example
  *
- * isMap(new Map);
+ * isMap(new Map());
  * // => true
  *
- * isMap(new WeakMap);
+ * isMap(new WeakMap());
  * // => false
  */
 const isMap = (value) => {

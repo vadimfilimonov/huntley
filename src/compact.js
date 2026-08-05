@@ -1,8 +1,8 @@
 /**
- * Creates an array with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey.
+ * Creates an array with all falsy values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsy.
  *
  * @param {Array} array The array to compact
- * @returns {Array} - Returns the new array of filtered values
+ * @returns {Array} Returns the new array of filtered values.
  * @example
  *
  * compact([0, 1, false, 2, '', 3]);

@@ -1,5 +1,6 @@
 /**
- * Gets the size of collection.
+ * Gets the size of a collection. Returns the number of characters for strings, enumerable keys for objects,
+ * and `0` for nullish or unsupported values.
  *
  * @param {Array|Object|string} collection
  * @returns {number}

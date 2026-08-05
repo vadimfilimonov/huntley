@@ -4,7 +4,9 @@
   "description": "Utility library delivering extras.",
   "main": "src/index.js",
   "type": "module",
-  "keywords": ["util"],
+  "keywords": [
+    "util"
+  ],
   "engines": {
     "node": ">=24.19.0 <25",
     "npm": ">=11.17.0 <12"
@@ -13,8 +15,7 @@
   "scripts": {
     "test": "npx --no-warnings jest --colors",
     "test:watch": "npx jest --colors --watchAll",
-    "lint": "eslint ./src",
-    "documentation": "documentation"
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,6 @@
   },
   "homepage": "https://github.com/VadimFilimonov/huntley#readme",
   "devDependencies": {
-    "documentation": "^14.0.3",
     "eslint": "^8.57.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.2",

@@ -1,12 +1,12 @@
 /**
- * Flattens `array` a single level deep
+ * Flattens `array` a single level deep.
  *
- * @param {Array} array The array to flatten
- * @returns {Array} Returns the new flattened array
+ * @param {Array} array The array to flatten.
+ * @returns {Array} Returns the new flattened array, or an empty array for non-arrays.
  * @example
  *
  * flatten([1, [2, [3, [4]], 5]]);
- * => [1, 2, [3, [4]], 5]
+ * // => [1, 2, [3, [4]], 5]
  */
 const flatten = (array) => {
   if (!Array.isArray(array)) {

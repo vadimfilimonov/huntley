@@ -5,10 +5,10 @@
  * @returns {boolean} - Returns `true` if `value` is a number, else `false`.
  * @example
  *
- * Number(3);
+ * isNumber(Number(3));
  * // => true
  *
- * Number('3');
+ * isNumber('3');
  * // => false
  */
 const isNumber = (value) => {

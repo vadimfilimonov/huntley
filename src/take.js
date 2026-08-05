@@ -1,7 +1,7 @@
 import isArray from './isArray.js';
 
 /**
- * Creates a `slice` of array with `n` elements taken from the beginning.
+ * Creates a slice of `array` with `n` elements taken from the beginning.
  *
  * @param {Array} array The array to query.
  * @param {number} n The number of elements to take.

@@ -1,5 +1,5 @@
 /**
- * Splits a collection into two by callback.
+ * Splits a collection into two groups by `predicate`. Objects are processed through their enumerable values.
  *
  * @param {Array|object} collection - The collection to iterate over.
  * @param {Function} predicate - The function invoked per iteration.
@@ -13,7 +13,7 @@
  * ];
  *
  * partition(users, user => user.age >= 21);
- * // => objects for [['adam, carl'], ['ivan']]
+ * // => [['adam', 'carl'], ['ivan']]
  */
 const partition = (collection, predicate) => {
   const array = Array.isArray(collection) ? collection : Object.values(collection);

@@ -1,7 +1,8 @@
 /**
- * Iterates over elements of `collection`, returning an array of all elements `predicate` returns truthy for. The predicate is invoked with three arguments: (value, index, collection).
+ * Iterates over an array, returning a new array of all elements for which `predicate` returns truthy.
+ * The predicate is invoked with three arguments: (value, index, array).
  *
- * @param {Array} collection The collection to iterate over.
+ * @param {Array} collection The array to iterate over.
  * @param {Function} predicate The function invoked per iteration.
  * @returns {Array} Returns the new filtered array.
  * @example
@@ -10,11 +11,10 @@
  *   { 'user': 'fred',   'age': 40, 'active': false }
  * ];
  *
- * _.filter(users, (o) => !o.active);
- * // => objects for ['fred']
+ * filter(users, (o) => !o.active);
+ * // => [{ 'user': 'fred', 'age': 40, 'active': false }]
  */
 const filter = (collection, predicate) => {
-  // TODO: Support objects as collection after matches, matchesProperty, matchesProperty realization
   return collection.filter((value, index, array) => predicate(value, index, array));
 };
 

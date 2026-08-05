@@ -1,8 +1,9 @@
 /**
- * Creates an array of elements split into groups the length of `size`. If `array` can't be split evenly, the final chunk will be the remaining elements.
+ * Creates an array of elements split into groups of `size`. If `array` can't be split evenly, the final chunk contains the remaining elements.
+ * Invalid or non-positive sizes return an empty array.
  *
  * @template T
- * @param {T[]} array The array to process.
+ * @param {ArrayLike<T>} array The array-like value to process.
  * @param {number} [size=1] The length of each chunk.
  * @returns {T[][]} Returns the new array of chunks.
  * @example

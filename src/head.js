@@ -1,5 +1,5 @@
 /**
- * Gets the first element of array.
+ * Gets the first element of `array`. Returns `undefined` for an empty or nullish value.
  *
  * @param {Array} array
  * @returns {*}

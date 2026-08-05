@@ -4,7 +4,7 @@
  *
  * @param {*} value
  * @param {*} defaultValue
- * @returns {boolean}
+ * @returns {*} Returns `value` when it is not `NaN`, `null`, or `undefined`; otherwise returns `defaultValue`.
  * @example
  *
  * defaultTo(1, 10);

@@ -9,7 +9,7 @@ import isNil from './isNil.js';
  * @example
  *
  * reverse([1, 2, 3]);
- * // => true
+ * // => [3, 2, 1]
  */
 const reverse = (array) => {
   if (isNil(array)) {

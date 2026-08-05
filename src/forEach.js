@@ -5,9 +5,9 @@ import isArray from './isArray.js';
  * Iterates over elements of `collection` and invokes `iteratee` for each element.
  * Iteration stops if `iteratee` explicitly returns `false`.
  *
- * @param {Array|Object} collection The collection to iterate over.
+ * @param {Array|Object|null|undefined} collection The collection to iterate over.
  * @param {Function} [iteratee=noop] The function invoked per iteration.
- * @returns {Array|Object} Returns collection.
+ * @returns {Array|Object|null|undefined} Returns `collection`.
  * @example
  *
  * const array = [1, 2];

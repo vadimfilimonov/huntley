@@ -2,7 +2,7 @@ import sum from './sum.js';
 import size from './size.js';
 
 /**
- * Computes the mean of the values in `array`.
+ * Computes the mean of the values in `array`. An empty array returns `NaN`.
  *
  * @param {Array} array
  * @returns {number} Returns the mean.

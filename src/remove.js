@@ -1,5 +1,6 @@
 /**
- * Removes all elements from array that predicate returns truthy for and returns an array of the removed elements. The predicate is invoked with three arguments: (value, index, array).
+ * Removes all elements from `array` for which `predicate` returns truthy and returns the removed elements.
+ * The method mutates `array`. The predicate is invoked with three arguments: (value, index, array).
  *
  * @param {Array} array - The array to modify.
  * @param {Function} predicate - The function invoked per iteration.
@@ -26,7 +27,6 @@ const remove = (array, predicate) => {
       indexes.push(i);
     }
   }
-  // TODO: Create pullAt
   for (let i = indexes.length - 1; i >= 0; i -= 1) {
     const index = indexes[i];
     array.splice(index, 1);

@@ -184,11 +184,12 @@ Returns **[number][164]** Returns the total.
 
 ## chunk
 
-Creates an array of elements split into groups the length of `size`. If `array` can't be split evenly, the final chunk will be the remaining elements.
+Creates an array of elements split into groups of `size`. If `array` can't be split evenly, the final chunk contains the remaining elements.
+Invalid or non-positive sizes return an empty array.
 
 ### Parameters
 
-*   `array` **[Array][165]** The array to process.
+*   `array` **[Array][165]** The array-like value to process.
 *   `size` **[number][164]** The length of each chunk. (optional, default `1`)
 
 ### Examples
@@ -205,7 +206,7 @@ Returns **[Array][165]** Returns the new array of chunks.
 
 ## compact
 
-Creates an array with all falsey values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsey.
+Creates an array with all falsy values removed. The values `false`, `null`, `0`, `""`, `undefined`, and `NaN` are falsy.
 
 ### Parameters
 
@@ -282,22 +283,25 @@ defaultTo(undefined, 10);
 // => 10
 ```
 
-Returns **[boolean][167]**&#x20;
+Returns **any** Returns `value` when it is not `NaN`, `null`, or `undefined`; otherwise returns `defaultValue`.
 
 ## divide
 
-Divide two numbers.
+Divides two numbers. Missing arguments are treated as identity values.
 
 ### Parameters
 
-*   `dividend` **[number][164]**&#x20;
-*   `divisor` **[number][164]**&#x20;
+*   `dividend` **[number][164]** The number to divide. (optional)
+*   `divisor` **[number][164]** The number to divide by. (optional)
 
 ### Examples
 
 ```javascript
 divide(6, 4);
 // => 1.5
+
+divide(6);
+// => 6
 ```
 
 Returns **[number][164]** Returns the quotient
@@ -358,7 +362,7 @@ Returns **[Array][165]** Returns the slice of `array`.
 
 ## fill
 
-Fills elements of `array` with `value` from `start` up to, but not including, `end`.
+Creates a copy of `array` with elements filled with `value` from `start` up to, but not including, `end`.
 
 ### Parameters
 
@@ -367,15 +371,23 @@ Fills elements of `array` with `value` from `start` up to, but not including, `e
 *   `start` **[number][164]** The start position. (optional, default `0`)
 *   `end` **[number][164]** The end position. (optional, default `array.length`)
 
-Returns **[Array][165]** Returns `array`.
+### Examples
+
+```javascript
+fill([1, 2, 3], 'a');
+// => ['a', 'a', 'a']
+```
+
+Returns **[Array][165]** Returns the filled copy of `array`.
 
 ## filter
 
-Iterates over elements of `collection`, returning an array of all elements `predicate` returns truthy for. The predicate is invoked with three arguments: (value, index, collection).
+Iterates over an array, returning a new array of all elements for which `predicate` returns truthy.
+The predicate is invoked with three arguments: (value, index, array).
 
 ### Parameters
 
-*   `collection` **[Array][165]** The collection to iterate over.
+*   `collection` **[Array][165]** The array to iterate over.
 *   `predicate` **[Function][166]** The function invoked per iteration.
 
 ### Examples
@@ -386,15 +398,15 @@ var users = [
   { 'user': 'fred',   'age': 40, 'active': false }
 ];
 
-_.filter(users, (o) => !o.active);
-// => objects for ['fred']
+filter(users, (o) => !o.active);
+// => [{ 'user': 'fred', 'age': 40, 'active': false }]
 ```
 
 Returns **[Array][165]** Returns the new filtered array.
 
 ## flatten
 
-Flattens `array` a single level deep
+Flattens `array` a single level deep.
 
 ### Parameters
 
@@ -404,10 +416,10 @@ Flattens `array` a single level deep
 
 ```javascript
 flatten([1, [2, [3, [4]], 5]]);
-=> [1, 2, [3, [4]], 5]
+// => [1, 2, [3, [4]], 5]
 ```
 
-Returns **[Array][165]** Returns the new flattened array
+Returns **[Array][165]** Returns the new flattened array, or an empty array for non-arrays.
 
 ## flattenDepth
 
@@ -422,7 +434,7 @@ Recursively flatten `array` up to `depth` times.
 
 ```javascript
 flattenDepth([1, [2, [3, [4]], 5]], 2);
-=> [1, 2, 3, [4], 5]
+// => [1, 2, 3, [4], 5]
 ```
 
 Returns **[Array][165]** Returns the new flattened array.
@@ -430,20 +442,26 @@ Returns **[Array][165]** Returns the new flattened array.
 ## forEach
 
 Iterates over elements of `collection` and invokes `iteratee` for each element.
+Iteration stops if `iteratee` explicitly returns `false`.
 
 ### Parameters
 
-*   `collection` **[Array][165]** The collection to iterate over.
+*   `collection` **([Array][165] | [Object][168] | null | undefined)** The collection to iterate over.
 *   `iteratee` **[Function][166]** The function invoked per iteration. (optional, default `noop`)
 
 ### Examples
 
 ```javascript
-forEach([1, 2]);
-// => 1
+const array = [1, 2];
+forEach(array, (value) => console.log(value));
+// => [1, 2]
+
+const object = { a: 1, b: 2 };
+forEach(object, (value, key) => console.log(key, value));
+// => { a: 1, b: 2 }
 ```
 
-Returns **any** Returns collection.
+Returns **([Array][165] | [Object][168] | null | undefined)** Returns `collection`.
 
 ## gt
 
@@ -471,7 +489,7 @@ Returns **[boolean][167]** Returns true if value is greater than other, else fal
 
 ## head
 
-Gets the first element of array.
+Gets the first element of `array`. Returns `undefined` for an empty or nullish value.
 
 ### Parameters
 
@@ -604,10 +622,10 @@ Checks if `value` is classified as a `Map` object.
 ### Examples
 
 ```javascript
-isMap(new Map);
+isMap(new Map());
 // => true
 
-isMap(new WeakMap);
+isMap(new WeakMap());
 // => false
 ```
 
@@ -690,10 +708,10 @@ Checks if `value` is classified as a `Number` primitive or object.
 ### Examples
 
 ```javascript
-Number(3);
+isNumber(Number(3));
 // => true
 
-Number('3');
+isNumber('3');
 // => false
 ```
 
@@ -785,7 +803,7 @@ Returns **[string][169]** Returns the joined string.
 
 ## last
 
-Gets the last element of array.
+Gets the last element of `array`. Returns `undefined` for an empty or nullish value.
 
 ### Parameters
 
@@ -846,7 +864,7 @@ Returns **any** Returns the maximum value.
 
 ## mean
 
-Computes the mean of the values in `array`.
+Computes the mean of the values in `array`. An empty array returns `NaN`.
 
 ### Parameters
 
@@ -933,7 +951,7 @@ Returns **any** Returns the nth element of `array`.
 
 ## partition
 
-Splits a collection into two by callback.
+Splits a collection into two groups by `predicate`. Objects are processed through their enumerable values.
 
 ### Parameters
 
@@ -950,7 +968,7 @@ const users = [
 ];
 
 partition(users, user => user.age >= 21);
-// => objects for [['adam, carl'], ['ivan']]
+// => [['adam', 'carl'], ['ivan']]
 ```
 
 Returns **[Array][165]** Returns the array of grouped elements.
@@ -992,7 +1010,7 @@ Reverses `array` so that the first element becomes the last, the second element 
 
 ```javascript
 reverse([1, 2, 3]);
-// => true
+// => [3, 2, 1]
 ```
 
 Returns **[Array][165]** Returns `array`.
@@ -1016,7 +1034,8 @@ Returns **[Array][165]** Returns the new shuffled array.
 
 ## size
 
-Gets the size of collection.
+Gets the size of a collection. Returns the number of characters for strings, enumerable keys for objects,
+and `0` for nullish or unsupported values.
 
 ### Parameters
 
@@ -1156,7 +1175,7 @@ Returns **[Array][165]** Returns the slice of `array`.
 
 ## take
 
-Creates a `slice` of array with `n` elements taken from the beginning.
+Creates a slice of `array` with `n` elements taken from the beginning.
 
 ### Parameters
 
@@ -1210,12 +1229,19 @@ Returns **[Array][165]** Returns the slice of `array`.
 
 ## takeWhile
 
-Creates a `slice` of array with `n` elements taken from the beginning.
+Creates a slice of `array` with elements taken from the beginning while `predicate` returns truthy.
 
 ### Parameters
 
 *   `array` **[Array][165]** The array to query.
-*   `predicate` **[Function][166]** The function invoked per iteration.
+*   `predicate` **[Function][166]** The function invoked per iteration. (optional, default `stubTrue`)
+
+### Examples
+
+```javascript
+takeWhile([1, 2, 3, 4], (value) => value < 3);
+// => [1, 2]
+```
 
 Returns **[Array][165]** Returns the slice of `array`.
 
