@@ -4,7 +4,6 @@ describe('isString', () => {
   test('Should return true for strings', () => {
     expect(isString('abc')).toEqual(true);
     expect(isString(String('abc'))).toEqual(true);
-    // eslint-disable-next-line no-new-wrappers
     expect(isString(new String('abc'))).toEqual(true);
     expect(isString(Object('abc'))).toEqual(true);
   });

@@ -12,9 +12,7 @@ describe('isFunction', () => {
   test('should return `false` for non-functions', () => {
     expect(isFunction([1, 2, 3])).toEqual(false);
     expect(isFunction(true)).toEqual(false);
-    // eslint-disable-next-line prettier/prettier
     expect(isFunction(new Date())).toEqual(false);
-    // eslint-disable-next-line prettier/prettier
     expect(isFunction(new Error())).toEqual(false);
     expect(isFunction({ a: 1 })).toEqual(false);
     expect(isFunction(1)).toEqual(false);

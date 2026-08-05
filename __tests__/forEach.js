@@ -6,9 +6,7 @@ describe('ForEach', () => {
 
     const actual = [];
     const returnedValue = forEach(input, (value, index, array) => {
-      // eslint-disable-next-line operator-assignment, no-param-reassign
       array[index] = array[index] * 3;
-      // eslint-disable-next-line operator-assignment, no-param-reassign
       value = value * 2;
       actual.push(value);
     });
