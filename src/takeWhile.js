@@ -1,4 +1,3 @@
-// @ts-check
 import isFunction from './isFunction.js';
 import stubTrue from './stubTrue.js';
 

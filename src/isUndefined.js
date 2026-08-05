@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Check if `value` is `undefined`
  *

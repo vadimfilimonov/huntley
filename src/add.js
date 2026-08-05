@@ -1,4 +1,3 @@
-// @ts-check
 import isUndefined from './isUndefined.js';
 
 /**

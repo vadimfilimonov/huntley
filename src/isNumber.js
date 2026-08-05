@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Checks if `value` is classified as a `Number` primitive or object.
  *

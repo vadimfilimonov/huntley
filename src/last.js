@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Gets the last element of array.
  *

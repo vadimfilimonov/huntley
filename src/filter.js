@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Iterates over elements of `collection`, returning an array of all elements `predicate` returns truthy for. The predicate is invoked with three arguments: (value, index, collection).
  *

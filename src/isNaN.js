@@ -1,4 +1,3 @@
-// @ts-check
 import isNumber from './isNumber.js';
 
 /**

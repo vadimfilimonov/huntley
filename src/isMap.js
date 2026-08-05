@@ -1,4 +1,3 @@
-// @ts-check
 import isObjectLike from './isObjectLike.js';
 
 /**

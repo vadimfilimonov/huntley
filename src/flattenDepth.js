@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Recursively flatten `array` up to `depth` times.
  *

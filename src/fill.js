@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Fills elements of `array` with `value` from `start` up to, but not including, `end`.
  *

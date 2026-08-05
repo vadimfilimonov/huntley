@@ -1,5 +1,3 @@
-// @ts-check
-
 import noop from './noop.js';
 
 /**

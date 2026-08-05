@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Checks if `value` is greater than `other`.
  *

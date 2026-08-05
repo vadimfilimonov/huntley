@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Computes the sum of the values in array.
  *

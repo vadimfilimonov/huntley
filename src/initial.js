@@ -1,4 +1,3 @@
-// @ts-check
 import dropRight from './dropRight.js';
 
 /**

@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * This function do nothing.
  *

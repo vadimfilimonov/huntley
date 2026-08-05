@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Splits a collection into two by callback.
  *

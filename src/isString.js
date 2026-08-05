@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Checks if `value` is classified as a `String` primitive or object.
  *

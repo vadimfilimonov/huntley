@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Creates a duplicate-free version of an array.
  *

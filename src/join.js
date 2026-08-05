@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Converts all elements in `array` into a string separated by `separator`
  *

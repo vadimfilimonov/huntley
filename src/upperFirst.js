@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Converts the first character of `string` to upper case.
  *

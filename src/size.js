@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Gets the size of collection.
  *

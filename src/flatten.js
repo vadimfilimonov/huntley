@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Flattens `array` a single level deep
  *

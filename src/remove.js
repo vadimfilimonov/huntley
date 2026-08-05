@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * Removes all elements from array that predicate returns truthy for and returns an array of the removed elements. The predicate is invoked with three arguments: (value, index, array).
  *

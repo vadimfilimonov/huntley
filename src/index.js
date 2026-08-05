@@ -1,4 +1,3 @@
-// @ts-check
 /* eslint-disable import/no-duplicates */
 import add from './add.js';
 import chunk from './chunk.js';

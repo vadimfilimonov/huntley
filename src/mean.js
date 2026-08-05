@@ -1,4 +1,3 @@
-// @ts-check
 import sum from './sum.js';
 import size from './size.js';
 
