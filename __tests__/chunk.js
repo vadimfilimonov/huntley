@@ -22,6 +22,9 @@ describe('Chunk', () => {
   });
 
   test('should support array-like collections', () => {
-    expect(chunk('abcd', 2)).toEqual([['a', 'b'], ['c', 'd']]);
+    expect(chunk('abcd', 2)).toEqual([
+      ['a', 'b'],
+      ['c', 'd'],
+    ]);
   });
 });
