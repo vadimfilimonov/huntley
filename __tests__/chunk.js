@@ -15,6 +15,13 @@ describe('Chunk', () => {
     expect(chunk(['a', 'b', 'c', 'd'], 0)).toEqual([]);
     expect(chunk(['a', 'b', 'c', 'd'], 1.9)).toEqual([['a'], ['b'], ['c'], ['d']]);
     expect(chunk(['a', 'b', 'c', 'd'], -1)).toEqual([]);
+    expect(chunk(['a', 'b', 'c', 'd'], NaN)).toEqual([]);
+    expect(chunk(['a', 'b', 'c', 'd'], null)).toEqual([]);
     expect(chunk([], 2)).toEqual([]);
+    expect(chunk(null, 2)).toEqual([]);
+  });
+
+  test('should support array-like collections', () => {
+    expect(chunk('abcd', 2)).toEqual([['a', 'b'], ['c', 'd']]);
   });
 });
