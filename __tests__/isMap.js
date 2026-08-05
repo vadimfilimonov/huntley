@@ -4,7 +4,7 @@ describe('isMap', () => {
   test('should return `true` for map', () => {
     expect(isMap(new Map())).toEqual(true);
     // eslint-disable-next-line prettier/prettier
-    expect(isMap(new Map)).toEqual(true);
+    expect(isMap(new Map())).toEqual(true);
   });
 
   test('should return `false` for non-map', () => {
@@ -17,6 +17,6 @@ describe('isMap', () => {
     expect(isMap(/x/)).toEqual(false);
     expect(isMap(new WeakMap())).toEqual(false);
     // eslint-disable-next-line prettier/prettier
-    expect(isMap(new WeakMap)).toEqual(false);
+    expect(isMap(new WeakMap())).toEqual(false);
   });
 });
