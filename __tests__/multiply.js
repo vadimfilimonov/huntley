@@ -8,6 +8,7 @@ describe('multiply', () => {
 
   test('wrong arguments', () => {
     expect(multiply(42)).toEqual(42);
+    expect(multiply(undefined, 42)).toEqual(42);
     expect(multiply()).toEqual(1);
     expect(multiply(0, 42)).toEqual(0);
     expect(multiply(42, 0)).toEqual(0);

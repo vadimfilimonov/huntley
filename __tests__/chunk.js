@@ -21,6 +21,16 @@ describe('Chunk', () => {
     expect(chunk(null, 2)).toEqual([]);
   });
 
+  test('returns an empty array when size cannot be converted to a number', () => {
+    const invalidSize = {
+      valueOf() {
+        throw new Error('Cannot convert size');
+      },
+    };
+
+    expect(chunk(['a', 'b'], invalidSize)).toEqual([]);
+  });
+
   test('should support array-like collections', () => {
     expect(chunk('abcd', 2)).toEqual([
       ['a', 'b'],

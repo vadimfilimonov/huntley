@@ -5,5 +5,6 @@ describe('UpperFirst', () => {
     expect(upperFirst('fred')).toEqual('Fred');
     expect(upperFirst('FRED')).toEqual('FRED');
     expect(upperFirst('')).toEqual('');
+    expect(upperFirst()).toEqual('');
   });
 });
