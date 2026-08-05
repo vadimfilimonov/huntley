@@ -1,3 +1,10 @@
+help:
+	@echo "Available commands:"
+	@echo "  make install     Install dependencies"
+	@echo "  make lint        Run ESLint"
+	@echo "  make test        Run tests"
+	@echo "  make test-watch  Run tests in watch mode"
+
 install:
 	npm install
 
@@ -10,4 +17,4 @@ test:
 test-watch:
 	npm run test:watch
 
-.PHONY: test
+.PHONY: help install lint test test-watch
