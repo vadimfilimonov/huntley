@@ -8,5 +8,7 @@ describe('Subtract', () => {
   test('wrong arguments', () => {
     expect(subtract()).toEqual(0);
     expect(subtract(6)).toEqual(6);
+    expect(subtract(0, 2)).toEqual(-2);
+    expect(subtract(2, 0)).toEqual(2);
   });
 });

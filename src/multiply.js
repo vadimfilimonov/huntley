@@ -1,4 +1,5 @@
 // @ts-check
+import isUndefined from './isUndefined.js';
 
 /**
  * Multiply two numbers.
@@ -12,9 +13,19 @@
  * // => 24
  */
 const multiply = (multiplier, multiplicand) => {
-  const normalizedMultiplier = multiplier || 0;
-  const normalizedMultiplicand = multiplicand || 0;
-  return normalizedMultiplier * normalizedMultiplicand;
+  if (isUndefined(multiplier) && isUndefined(multiplicand)) {
+    return 1;
+  }
+
+  if (isUndefined(multiplier)) {
+    return multiplicand;
+  }
+
+  if (isUndefined(multiplicand)) {
+    return multiplier;
+  }
+
+  return multiplier * multiplicand;
 };
 
 export default multiply;

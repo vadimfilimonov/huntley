@@ -1,6 +1,5 @@
 // @ts-check
-
-const DEFAULT_VALUE = 0;
+import isUndefined from './isUndefined.js';
 
 /**
  * Adds two numbers.
@@ -15,9 +14,19 @@ const DEFAULT_VALUE = 0;
  * // => 10
  */
 const add = (augend, addend) => {
-  const normalizedAugend = augend || DEFAULT_VALUE;
-  const normalizedAddend = addend || DEFAULT_VALUE;
-  return normalizedAugend + normalizedAddend;
+  if (isUndefined(augend) && isUndefined(addend)) {
+    return 0;
+  }
+
+  if (isUndefined(augend)) {
+    return addend;
+  }
+
+  if (isUndefined(addend)) {
+    return augend;
+  }
+
+  return augend + addend;
 };
 
 export default add;

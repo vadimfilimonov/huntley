@@ -1,4 +1,5 @@
 // @ts-check
+import isUndefined from './isUndefined.js';
 
 /**
  * Divide two numbers.
@@ -12,15 +13,15 @@
  * // => 1.5
  */
 const divide = (dividend, divisor) => {
-  if (dividend === undefined && divisor === undefined) {
+  if (isUndefined(dividend) && isUndefined(divisor)) {
     return 1;
   }
 
-  if (dividend === undefined) {
+  if (isUndefined(dividend)) {
     return divisor;
   }
 
-  if (divisor === undefined) {
+  if (isUndefined(divisor)) {
     return dividend;
   }
 

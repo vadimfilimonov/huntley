@@ -8,5 +8,7 @@ describe('Add', () => {
   test('wrong arguments', () => {
     expect(add()).toEqual(0);
     expect(add(2)).toEqual(2);
+    expect(add(0, 2)).toEqual(2);
+    expect(add(2, 0)).toEqual(2);
   });
 });

@@ -1,4 +1,5 @@
 // @ts-check
+import isUndefined from './isUndefined.js';
 
 /**
  * Subtract two numbers.
@@ -12,9 +13,19 @@
  * // => 2
  */
 const subtract = (minuend, subtrahend) => {
-  const normalizedMinuend = minuend || 0;
-  const normalizedSubtrahend = subtrahend || 0;
-  return normalizedMinuend - normalizedSubtrahend;
+  if (isUndefined(minuend) && isUndefined(subtrahend)) {
+    return 0;
+  }
+
+  if (isUndefined(minuend)) {
+    return subtrahend;
+  }
+
+  if (isUndefined(subtrahend)) {
+    return minuend;
+  }
+
+  return minuend - subtrahend;
 };
 
 export default subtract;
