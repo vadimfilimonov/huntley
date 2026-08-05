@@ -1,4 +1,3 @@
-/* eslint-disable import/no-duplicates */
 import add from './add.js';
 import chunk from './chunk.js';
 import compact from './compact.js';
@@ -13,7 +12,6 @@ import filter from './filter.js';
 import flatten from './flatten.js';
 import flattenDepth from './flattenDepth.js';
 import forEach from './forEach.js';
-import first from './head.js';
 import gt from './gt.js';
 import head from './head.js';
 import identity from './identity.js';
@@ -57,6 +55,8 @@ import takeWhile from './takeWhile.js';
 import unary from './unary.js';
 import uniq from './uniq.js';
 import upperFirst from './upperFirst.js';
+
+const first = head;
 
 export {
   add,
