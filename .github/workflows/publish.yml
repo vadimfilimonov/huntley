@@ -1,33 +1,39 @@
 name: Publish Package to npmjs
 on:
   push:
-    paths:
-      - 'package.json'
+    tags:
+      - 'v*.*.*'
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
       id-token: write
-      packages: write
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
         with:
           node-version: '24.19.0'
           registry-url: 'https://registry.npmjs.org'
-      - run: sudo apt-get install -y jq
       - run: npm ci
-      - id: get_version
-        run: echo "VERSION=$(jq -r '.version' package.json)" >> $GITHUB_ENV
-      - run: |
-          if git log -1 --pretty=%B | grep -q "version ${VERSION}"; then
-            echo "Version updated to ${VERSION}, proceeding with publish."
-          else
-            echo "Version not updated, skipping publish."
-            exit 0
+      - name: Verify package version
+        run: |
+          PACKAGE_VERSION=$(node -p "require('./package.json').version")
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+
+          if [ "$PACKAGE_VERSION" != "$TAG_VERSION" ]; then
+            echo "Tag version ($TAG_VERSION) does not match package version ($PACKAGE_VERSION)."
+            exit 1
           fi
+      - name: Run linter
+        run: npm run lint
+      - name: Run tests
+        run: npm test -- --coverage
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
       - run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
