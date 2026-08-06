@@ -1,10 +1,42 @@
-# huntley
+# Huntley
 
-[![Actions Status](https://github.com/VadimFilimonov/huntley/workflows/linter/badge.svg)](https://github.com/VadimFilimonov/huntley/actions/workflows/linter.yml)
-[![Actions Status](https://github.com/VadimFilimonov/huntley/workflows/tests/badge.svg)](https://github.com/VadimFilimonov/huntley/actions/workflows/tests.yml)
+[![Linter](https://github.com/VadimFilimonov/huntley/actions/workflows/linter.yml/badge.svg)](https://github.com/VadimFilimonov/huntley/actions/workflows/linter.yml)
+[![Tests](https://github.com/VadimFilimonov/huntley/actions/workflows/tests.yml/badge.svg)](https://github.com/VadimFilimonov/huntley/actions/workflows/tests.yml)
 
-**DO NOT USE IT IN PRODUCTION!**
+A small JavaScript utility library with a simple, readable API.
 
-This is a training JavaScript utility library delivering extras.
+> **Experimental:** The public API and behavior may change in future releases.
 
-For more information, see the [Full Documentation](https://github.com/VadimFilimonov/huntley/tree/main/docs)
+## Installation
+
+```bash
+npm install huntley
+```
+
+## Usage
+
+```js
+import { chunk, upperFirst } from 'huntley';
+
+chunk(['a', 'b', 'c', 'd'], 2);
+// => [['a', 'b'], ['c', 'd']]
+
+upperFirst('hello');
+// => 'Hello'
+```
+
+See the [getting started guide](./docs/get-started.md) and [API documentation](./docs/README.md) for more examples.
+
+## Development
+
+```bash
+make install
+make lint
+make test
+```
+
+Use `make help` to see all available commands.
+
+## License
+
+ISC
