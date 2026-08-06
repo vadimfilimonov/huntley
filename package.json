@@ -17,6 +17,16 @@
     "test:watch": "node ./node_modules/jest/bin/jest.js --colors --watchAll",
     "lint": "eslint ."
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VadimFilimonov/huntley.git"

@@ -4,7 +4,7 @@ import prettierRecommended from 'eslint-plugin-prettier/recommended';
 
 export default [
   {
-    ignores: ['docs/**', 'node_modules/**'],
+    ignores: ['docs/**'],
   },
   js.configs.recommended,
   {
@@ -13,7 +13,6 @@ export default [
       ecmaVersion: 2021,
       sourceType: 'module',
       globals: {
-        ...globals.browser,
         ...globals.es2021,
         ...globals.jest,
       },
