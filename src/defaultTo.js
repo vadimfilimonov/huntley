@@ -1,3 +1,5 @@
+import isNil from './isNil.js';
+
 /**
  * Checks `value` to determine whether a default value should be returned in its place.
  * The `defaultValue` is returned if `value` is `NaN`, `null`, or `undefined`.
@@ -14,7 +16,7 @@
  * // => 10
  */
 const defaultTo = (value, defaultValue) => {
-  return value === null || value === undefined || Number.isNaN(value) ? defaultValue : value;
+  return isNil(value) || Number.isNaN(value) ? defaultValue : value;
 };
 
 export default defaultTo;
