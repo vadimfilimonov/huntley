@@ -3,19 +3,22 @@
   "version": "0.0.7",
   "description": "Utility library delivering extras.",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
   "type": "module",
   "keywords": [
     "util"
   ],
   "engines": {
-    "node": ">=24.19.0 <25",
-    "npm": ">=11.17.0 <12"
+    "node": ">=20"
   },
   "packageManager": "npm@11.17.0",
   "scripts": {
     "test": "node --no-warnings ./node_modules/jest/bin/jest.js --colors",
     "test:watch": "node ./node_modules/jest/bin/jest.js --colors --watchAll",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint && npm test -- --runInBand"
   },
   "jest": {
     "coverageThreshold": {
