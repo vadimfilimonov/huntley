@@ -1,4 +1,5 @@
 import add from './add.js';
+import clamp from './clamp.js';
 import chunk from './chunk.js';
 import compact from './compact.js';
 import concat from './concat.js';
@@ -60,6 +61,7 @@ const first = head;
 
 export {
   add,
+  clamp,
   chunk,
   compact,
   concat,
@@ -121,6 +123,7 @@ export {
 
 export default {
   add,
+  clamp,
   chunk,
   compact,
   concat,
