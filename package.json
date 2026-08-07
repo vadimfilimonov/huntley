@@ -6,6 +6,10 @@
   "exports": {
     ".": "./src/index.js"
   },
+  "files": [
+    "src",
+    "docs"
+  ],
   "type": "module",
   "keywords": [
     "util"
