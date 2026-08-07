@@ -6,6 +6,9 @@
 *   [chunk][4]
     *   [Parameters][5]
     *   [Examples][6]
+*   [clamp][171]
+    *   [Parameters][172]
+    *   [Examples][173]
 *   [compact][7]
     *   [Parameters][8]
     *   [Examples][9]
@@ -160,6 +163,15 @@
 *   [uniq][158]
     *   [Parameters][159]
     *   [Examples][160]
+*   [toLower][174]
+    *   [Parameters][175]
+    *   [Examples][176]
+*   [toString][177]
+    *   [Parameters][178]
+    *   [Examples][179]
+*   [toUpper][180]
+    *   [Parameters][181]
+    *   [Examples][182]
 *   [upperFirst][161]
     *   [Parameters][162]
     *   [Examples][163]
@@ -203,6 +215,31 @@ chunk(['a', 'b', 'c', 'd'], 3);
 ```
 
 Returns **[Array][165]** Returns the new array of chunks.
+
+## clamp
+
+Restricts `number` to the inclusive range between `lower` and `upper`. If only one boundary is provided, it is treated as the upper boundary and the lower boundary defaults to `0`. Reversed boundaries are normalized automatically.
+
+### Parameters
+
+*   `number` **[number][164]** The number to clamp.
+*   `lower` **[number][164]** The lower boundary. (optional)
+*   `upper` **[number][164]** The upper boundary. (optional)
+
+### Examples
+
+```javascript
+clamp(10, 0, 5);
+// => 5
+
+clamp(-2, 0, 5);
+// => 0
+
+clamp(3, 5);
+// => 3
+```
+
+Returns **[number][164]** Returns the clamped number.
 
 ## compact
 
@@ -1279,6 +1316,68 @@ uniq([2, 1, 2]);
 
 Returns **[Array][165]**&#x20;
 
+## toLower
+
+Converts `value`, as a whole, to lower case. `null` and `undefined` return an empty string.
+
+### Parameters
+
+*   `value` **any** The value to convert. (optional, default `''`)
+
+### Examples
+
+```javascript
+toLower('FOO');
+// => 'foo'
+
+toLower(null);
+// => ''
+```
+
+Returns **[string][169]** Returns the lower cased string.
+
+## toString
+
+Converts `value` to a string. `null` and `undefined` return an empty string.
+
+> **TODO:** The implementation will be extended to cover additional edge cases, including preserving negative zero.
+
+### Parameters
+
+*   `value` **any** The value to convert. (optional, default `''`)
+
+### Examples
+
+```javascript
+toString(123);
+// => '123'
+
+toString(null);
+// => ''
+```
+
+Returns **[string][169]** Returns the converted string.
+
+## toUpper
+
+Converts `value`, as a whole, to upper case. `null` and `undefined` return an empty string.
+
+### Parameters
+
+*   `value` **any** The value to convert. (optional, default `''`)
+
+### Examples
+
+```javascript
+toUpper('foo');
+// => 'FOO'
+
+toUpper(null);
+// => ''
+```
+
+Returns **[string][169]** Returns the upper cased string.
+
 ## upperFirst
 
 Converts the first character of `string` to upper case.
@@ -1638,3 +1737,27 @@ Returns **[string][169]** Returns the converted string.
 [169]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
 
 [170]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+
+[171]: #clamp
+
+[172]: #parameters-51
+
+[173]: #examples-55
+
+[174]: #tolower
+
+[175]: #parameters-52
+
+[176]: #examples-56
+
+[177]: #tostring
+
+[178]: #parameters-53
+
+[179]: #examples-57
+
+[180]: #toupper
+
+[181]: #parameters-54
+
+[182]: #examples-58

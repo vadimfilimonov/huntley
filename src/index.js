@@ -53,6 +53,9 @@ import tail from './tail.js';
 import take from './take.js';
 import takeRight from './takeRight.js';
 import takeWhile from './takeWhile.js';
+import toLower from './toLower.js';
+import toString from './toString.js';
+import toUpper from './toUpper.js';
 import unary from './unary.js';
 import uniq from './uniq.js';
 import upperFirst from './upperFirst.js';
@@ -116,6 +119,9 @@ export {
   take,
   takeRight,
   takeWhile,
+  toLower,
+  toString,
+  toUpper,
   unary,
   uniq,
   upperFirst,

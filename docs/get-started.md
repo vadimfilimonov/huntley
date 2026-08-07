@@ -44,6 +44,15 @@ const evenNumbers = filter([1, 2, 3, 4], (value) => value % 2 === 0);
 // => [2, 4]
 ```
 
+You can use `clamp` to keep a number inside a range:
+
+```js
+import { clamp } from 'huntley';
+
+clamp(120, 0, 100);
+// => 100
+```
+
 ## Check your usage
 
 The library is experimental, so check edge cases that matter to your code, especially empty collections and `null` or `undefined` values. Keep the input and output behavior covered by your own tests.
