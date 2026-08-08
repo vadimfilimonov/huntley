@@ -18,6 +18,8 @@
 const partition = (collection, predicate) => {
   const array = Array.isArray(collection) ? collection : Object.values(collection);
 
+  // TODO: Evaluate predicate once per item and split the result in one pass.
+  // The current implementation invokes predicate twice for every item.
   const first = array.filter((item) => predicate(item));
   const second = array.filter((item) => !predicate(item));
 

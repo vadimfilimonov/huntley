@@ -21,6 +21,8 @@ const takeWhile = (array, predicate) => {
   for (let i = 0; i < array.length; i += 1) {
     const item = array[i];
 
+    // TODO: Pass the index and the whole array to predicate, as the callback
+    // contract requires: predicate(value, index, array).
     if (!processedPredicate(item)) {
       return takedItems;
     }
