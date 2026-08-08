@@ -4,6 +4,7 @@ describe('isNaN', () => {
   test('Should work', () => {
     expect(isNaN(NaN)).toEqual(true);
     expect(isNaN(Object(NaN))).toEqual(true);
+    expect(isNaN(Object(3))).toEqual(false);
 
     expect(isNaN(3)).toEqual(false);
     expect(isNaN(Number.MIN_VALUE)).toEqual(false);
