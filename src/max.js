@@ -12,11 +12,17 @@
  * // => undefined
  */
 const max = (array) => {
-  if (array && array.length > 0) {
-    return Math.max(...array);
+  if (!array || array.length === 0) {
+    return undefined;
   }
 
-  return undefined;
+  let result = -Infinity;
+
+  for (const value of array) {
+    result = Math.max(result, value);
+  }
+
+  return result;
 };
 
 export default max;

@@ -12,11 +12,17 @@
  * // => undefined
  */
 const min = (array) => {
-  if (array && array.length > 0) {
-    return Math.min(...array);
+  if (!array || array.length === 0) {
+    return undefined;
   }
 
-  return undefined;
+  let result = Infinity;
+
+  for (const value of array) {
+    result = Math.min(result, value);
+  }
+
+  return result;
 };
 
 export default min;
